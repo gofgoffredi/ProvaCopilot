@@ -1,0 +1,346 @@
+
+Trasmissioni satellitari
+
+Indice
+1 INTRODUZIONE ................................................................................................................................................. 3
+2 ACCESSO MULTIPLO .......................................................................................................................................... 4
+3 STAZIONE DI TERRA ........................................................................................................................................... 7
+4 COMUNICAZIONI DIGITALI SATELLITARI ...........................................................................................................11
+5 RETI VSAT .........................................................................................................................................................12
+BIBLIOGRAFIA ............................................................................................................................................................14
+
+
+
+1 Introduzione
+Le trasmissioni satellitari permettono la comunicazione tra stazioni di terra dislocate su
+qualunque punto del globo terrestre. Mediante varie tecniche di accesso multiplo, un gran numero
+di utenti possono condividere i transponder di un singolo satellite. Le stazioni di terra e i budget di
+collegamento vanno opportunamente dimensionati in funzione delle prestazioni richieste al
+collegamento e alle potenze disponibili, sia nel caso di trasmissioni analogiche che nel caso di
+comunicazioni digitali. Infine, sono descritte le reti di tipo VSAT.
+
+
+
+2 Accesso multiplo
+L’accesso multiplo a un satellite è definito come la capacità di un certo numero di stazioni
+terrestri di interconnettere i rispettivi canali di comunicazione attraverso un satellite comune
+condiviso. L'accesso satellitare può essere semipermanente (dedicato) o temporaneo (a richiesta).
+Se l'assegnazione avviene nel dominio della frequenza si parla di accesso multiplo a
+divisione di frequenza (FDMA). Se avviene nel dominio del tempo si parla di accesso multiplo a
+divisione di tempo (TDMA). Se avviene nel dominio dei codici si parla di accesso multiplo a
+divisione di codice (CDMA).
+Per collegamenti con traffico intenso l'accesso multiplo dedicato può risultare
+economicamente conveniente, mentre per collegamenti a basso traffico può convenire un
+accesso a richiesta (demand-assigned multiple access - DAMA). Inoltre, una stazione terrestre può
+ricorrere a un accesso DAMA in caso di sovraccarichi dei propri canali FDMA.
+Accesso multiplo a divisione di Frequenza (FDMA).
+Tra tutte le tecniche di accesso multiplo qui considerate, l’accesso FDMA è storicamente quella più
+diffusa. Le bande RF disponibili hanno una larghezza di banda di 500 MHz ciascuna. Ciascun
+satellite dispone di più transponder, ciascuno dei quali copre un segmento della banda di 500MHz.
+Ad esempio la banda di 500MHz può essere suddivisa utilizzando 12 transponder, ciascuno dei
+quali trasmette su una banda di 36MHz. A ciascuna stazione di terra viene assegnato un segmento
+o una porzione di segmento di frequenza.
+
+
+
+Figura 1. Esempio di allocazione dei canali in un sistema FDMA
+
+Accesso multiplo a divisione di tempo (TDMA).
+L’accesso multiplo a TDMA opera nel dominio del tempo e può essere utilizzato solo per
+connessioni digitali. Gli slot temporali di trasmissione sono assegnati alle stazioni di terra in ordine
+sequenziale. Ogni stazione terrestre ha l'uso completo ed esclusivo della larghezza di banda del
+transponder durante il proprio slot temporale assegnato. A seconda della larghezza di banda del
+transponder, vengono utilizzati bit rate di 10-100 Mbps (megabit al secondo). Con il funzionamento
+TDMA, le stazioni di terra utilizzano la modulazione digitale e trasmettono pacchetti dati (burst) per
+tutta la durata dello slot assegnato.
+
+
+
+Figura 2. Esempio di trama TDMA e composizione del preambolo
+
+
+
+La sincronizzazione dei tempi di accesso è una delle criticità dei sistemi TDMA. La trama dati
+digitale contiene i singoli burst digitali di ciascuna delle stazioni di terra inclusi gli intervalli di guardia
+tra burst successivi. Per garantire che tutte le stazioni siano sincronizzate con un master clock, si
+utilizza un burst di sincronizzazione come primo elemento del frame. Un esempio di trama è
+riportato in Figura 2.
+
+Vantaggi e Svantaggi di FDMA e TDMA.
+Uno dei vantaggi del TDMA rispetto al FDMA risiede nel fatto che gli amplificatori finali dei
+trasmettitori soffrono di non linearità nelle sue caratteristiche di ingresso-uscita e questo genera alti
+valori dei prodotti di intermodulazione quando più portanti radio accedono simultaneamente al
+transponder. Quando il transponder opera a potenza massima, questi disturbi possono
+compromettere la qualità della trasmissione. Ciò rende necessaria una riduzione della potenza di
+trasmissione che determina una ridotta capacità di informazione. Di conseguenza, la potenza di
+collegamento in uplink da ciascuna stazione di terra deve essere attentamente coordinata per
+garantire il corretto utilizzo del satellite. La complessità del problema aumenta quando un gran
+numero di stazioni di terra accedono a un transponder.
+D'altra parte, il TDMA consente al transponder di funzionare a piena potenza perché solo il
+transponder satellitare riceve in ingresso tutti i segnali su una singola portante radio.
+
+
+FDMA :
+
+Vantaggi 
+Non è richiesta alcuna
+sincronizzazione di rete.
+L'assegnazione dei canali è semplice e
+diretta.
+
+Svantaggi
+I livelli di potenza in uplink devono
+essere strettamente coordinati per
+ottenere un uso efficiente della
+potenza in uscita del transponder.
+Le difficoltà legate ai prodotti di
+intermodulazione impongono
+limitazioni in potenza in funzione del
+numero di portanti RF con una perdita
+intrinseca di efficienza.
+
+
+TDMA :
+Vantaggi 
+Non c'è condivisione di potenza
+e non si verificano problemi
+legati ai prodotti di
+intermodulazione.
+Tolleranza alle differenze in
+EIRP e velocità di trasmissione
+dati tra i diversi utenti.
+Gli accessi possono essere
+rapidamente riconfigurati in
+funzione del carico di traffico.
+
+
+Svantaggi 
+Necessita una precisa
+sincronizzazione della rete.
+Perdita di efficienza dovuta ai
+tempi di guardia e ai preamboli.
+Potrebbe essere necessario un
+buffer di memoria se le
+lunghezze dei frame sono
+lunghe.
+
+
+
+
+3 Stazione di terra
+La capacità di una stazione terrestre o di un satellite di ricevere un segnale è descritta dalla
+cifra di merito G/T, strumento utile anche nell'analisi del budget di collegamento. Il budget di
+collegamento è utilizzato dall'ingegnere di sistema per dimensionare tutti i componenti delle
+stazioni terrestri e dei satelliti, come le potenze dei segnali RF, guadagno e direttività delle antenne
+e caratteristiche del front-end del ricevitore.
+
+G/T = G pedice dB - 10 log in base 10 (T pedice sys)
+
+G rappresenta il guadagno netto dell’antenna da cui vengono sottratte tutte le perdite di
+trasmissione fino ad un punto di riferimento, solitamente coincidente con l’ingresso
+dell’amplificatore di ricezione (low noise amplifier – LNA). Queste perdite includono attenuazioni in
+guida d’onda, filtri passabanda, eventuali splitter/coupler, switch. Tsys è la temperatura equivalente
+di rumore del ricevitore ed è data da
+
+T pedice sys = T pedice ant + T pedice ric
+
+dove Tant rappresenta il rumore di antenna e include il rumore celeste (sky noise - Tsky) più il
+rumore termico generato da tutti i dispositivi inseriti nel sistema tra l’antenna e il punto di
+riferimento. Tric rappresenta la temperatura di rumore del ricevitore vero e proprio. Il rumore di
+antenna Tant è calcolato come:
+
+Tant = ((l pedice a) 290 + T pedice sky) / lpedice a
+
+dove la è l’attenuazione totale fino al punto di riferimento:
+
+l pedice a = 10 eloevato a (La/10)
+
+e La è la somma delle attenuazioni in decibel.
+Il rumore celeste Tsky aumenta all’aumentare della frequenza e diminuisce all’aumentare
+dell’angolo di elevazione, come mostrato in Tabella 1
+
+
+
+Tabella 1. Rumore celeste per diversi valori di frequenza angolo di elevazione
+Frequenza (GHz) Angolo di elevazione (°) Rumore celeste Tsky (K)
+4.0 5 28
+4.0 10 16
+7.5 5 33
+7.5 10 18
+11.7 10 23
+11.7 15 18
+20.0 10 118
+20.0 15 100
+20.0 20 80
+
+
+La temperatura equivalente di rumore di un dispositivo Te (misurata in kelvin) è legata alla
+cifra di rumore del dispositivo stesso dalla seguente relazione:
+
+
+NF pedice dB = 10 log in base 10 (1 + Te / 290)
+
+
+Esempio: Una stazione di terra opera a 12 GHz con un angolo di elevazione di 10°. Ha un
+guadagno pari a 47 dB e una perdita di 2.5 dB dall'antenna all'ingresso del LNA. Il rumore celeste è
+pari a 25 K e genera una temperatura di rumore di antenna Tant = 240K. La cifra di rumore del LNA è
+1.5 dB. Calcolare G/T.
+Dalla relazione
+
+NFdB = ....
+
+assumendo Tric = Te si ricava:
+
+Tric = ....
+
+La temperatura equivalente di rumore del ricevitore Tsys è:
+
+Tsys = ....
+
+Il guadagno netto dall’antenna all’ingresso del LNA è:
+
+G = ....
+
+
+
+da cui:
+
+G/T = ....
+
+
+Per stazioni di terra operanti a frequenze superiori ai 10GHz si applica solitamente al budget
+di collegamento un margine di sicurezza di 4dB per compensare anomalie di propagazione,
+invecchiamento dei componenti. Tuttavia ogni decibel al di sopra di quanto strettamente
+necessario alla chiusura del collegamento rappresenta un costo e dunque richiede un’attenta
+valutazione da parte del progettista.
+Budget di collegamento
+Il budget di collegamento per un link satellitare permette di calcolare i parametri del
+sistema di comunicazione spaziale. Si parte dall'EIRP del satellite per il downlink o l’EIRP della
+stazione di terra per l'uplink.
+L’obbiettivo è avere un rapporto segnale rumore C/N0 compatibile con i requisiti di
+trasmissione. C/N0 è riferito a 1 Hz di larghezza di banda e misurato all'ingresso dell'LNA.
+
+
+C/N0 = EIRP - FSL pedice dB - L pedice add + G/T pedice (dB/K)  -k
+
+dove FSL è l’attenuazione di spazio libero e k=-228.6dBW è la costante di Boltzmann che
+rappresenta il rumore di un ricevitore ideale che opera allo 0 assoluto in una banda di 1 Hz. Ladd
+rappresenta perdite aggiuntive che possono essere:
+ Attenuazione dovuta alla polarizzazione (0.5 dB)
+ Perdite di puntamento al satellite e al terminale di terra (0.5 dB ciascuna)
+ Perdite di copertura (per regioni ai margini della copertura geografica dell’antenna)
+ Assorbimento atmosferico (varia con frequenza, altitudine e angolo di elevazione)
+ Attenuazione per pioggia (per frequenze oltre i 10 GHz)
+
+
+
+Tabella 2. Esempio di budget di collegamento per downlink
+Budget di collegamento per downlink
+EIRP del satellite  +30 dBW
+Att.ne spazio libero -196.8 dB
+Perdite di puntamento al satellite -0.5 dB
+Perdite di copertura 0.0 dB
+Perdite per pioggia 0.0 dB
+Assorbimento atmosferico -0.5 dB
+Perdite per polarizzazione -0.5 dB
+Perdite di puntamento al terminale -0.5 dB
+Isotropic receive level  -168.8 dBW
+G/T del terminale  +20.0 dB/K
+Boltzmann’s constant (dBW)  -(-228.6 dBW)
+C/N0  79.8 dB
+
+
+
+
+4 Comunicazioni digitali satellitari
+Le comunicazioni digitali via satellite possono avvenire mediante TDMA, FDMA, e su una
+rete VSAT (Very-Small-Aperture Terminal), che è spiegato più nel dettaglio nel paragrafo
+successivo. Nel caso di FDMA diversi utenti possono condividere uno stesso transponder
+trasmettendo su portanti distinte e valgono le stesse regole per quanto riguarda le potenze di
+trasmissione, in quanto i prodotti di intermodulazione generati nell’amplificatore di potenza del
+satellite possono incidere notevolmente sul tasso di errori. Nel budget di collegamento, una volta
+calcolato C/N0 si può ricavare il valore di Eb/N0 con la seguente formula:
+
+
+Eb/N0 = C/ N0 - 10 log in base 10 di (bit rate)
+
+Il valore Eb/N0 può ora essere applicato alle curve tipiche delle modulazioni digitali per
+derivare la BER. Come accennato in precedenza, la comunicazione satellitare è limitata dal
+downlink perché l’EIRP del satellite è strettamente limitato. Per rispettare i requisiti di BER con i valori
+di potenza ricevuti sono necessari algoritmi di correzione di errore (Forward Error Correction – FEC).
+
+
+Tabella 3. Esempio di parametri di trasmissione di un canale satellitare digitale
+Parametri Requisiti
+Information rate (IR) 64 kbps - 44.736 Mbit/s
+Codifica di correzione di errore (FEC) Rate 3/4 codici convoluzionali, decodifica di Viterbi
+Velocità di linea IR · 4/3
+Formato di modulazione QPSK
+Banda minima allocata 0.7 R
+Banda di rumore 0.6 R
+Eb/N0 vs BER (FEC 3/4)
+- Modem back-to-back
+- Canale satellitare
+10-3 10-7 10-8
+5.3 dB 8.3 dB 8.8 dB
+5.7 dB 8.7 dB 9.2 dB
+
+
+5 Reti VSAT
+I VSAT sono definiti dalla loro apertura dell'antenna, che può variare da 0.5 m a 2.5 m. Tali
+aperture sono considerevolmente inferiori rispetto alle stazioni di terra convenzionali. Una rete VSAT
+consiste di un terminale di terra (hub) relativamente grande e più terminali VSAT remoti. Alcune reti
+hanno più di 5000 terminali VSAT periferici (ad esempio grosse reti aziendali).
+In passato i motivi principali alla base dell'uso di reti VSAT erano:
+ Rappresentano un'alternativa economica per stabilire una rete di dati, in particolare
+se il flusso di traffico è da/per una struttura centrale, di solito una sede centrale da/per sedi
+periferiche.
+ Per bypassare gli operatori TLC realizzando una rete completamente privata.
+ Fornire connettività di qualità laddove altri mezzi siano scadenti o inesistenti.
+Queste soluzioni, sebbene ormai obsolete in molte nazioni grazie alla diffusione capillare
+della fibra ottica, sono ancora diffuse soprattutto nelle nazioni emergenti e laddove le infrastrutture
+di rete in fibra abbiano ancora una scarsa copertura.
+
+
+
+
+Figura 3. Esempio di trama rete VSAT
+
+
+
+
+Nelle reti VSAT convenzionali, l'hub è progettato per compensare l'handicap dovuto alle
+dimensioni ridotte dei terminali VSAT. Per esempio, l’hub può avere un'apertura di antenna tra i5m
+Luca Potì - Trasmissioni satellitari
+Attenzione! Questo materiale didattico è per uso personale dello studente ed è coperto da
+copyright. Ne è severamente vietata la riproduzione o il riutilizzo anche parziale, ai sensi e
+per gli effetti della legge sul diritto d’autore (L. 22.04.1941/n. 633).
+13 di 14
+e gli 11m e amplificatori con potenza in uscita da 100 W a 600 W. Gli amplificatori a basso rumore
+(LNA), tipicamente a 12 GHz, hanno cifre di rumore tra 0.5dB e 1.0dB e downcoverter di frequenza
+a basso rumore, con cifra di rumore di 1.5dB. I valori G/T dell'hub vanno da +29dB/K a +34dB/K. I
+terminali VSAT hanno potenze di uscita al trasmettitore tra 1W e 50W, convertitori a basso rumore
+(circa 1.5 dB) o LNA da 1dB. I valori G/T tipici per i downlink a 12.5GHz sono tra +14 dB/K e +22 dB/K,
+a seconda dell'apertura dell'antenna. L'obbiettivo è quello di rendere un terminale VSAT il più
+economico possibile.
+Nella progettazione delle reti VSAT rappresentano aspetti importanti quelli legati ai bassi
+ritardi, alla semplicità di implementazione e all’affidabilità di funzionamento, mentre l'uso efficiente
+della banda non è di primaria importanza.
+L'accesso ai messaggi può essere di tre tipi:
+ fisso assegnato
+ accesso casuale
+ prenotazione
+Nell'accesso multiplo assegnato fisso, i protocolli VSAT sono basati su FDMA, CDMA e TDMA.
+Il collegamento in uscita (da hub a VSAT) è comunemente un flusso di bit seriale a divisione di
+tempo (TDM), con velocità da 56 kbps fino a 1,544 Mbps o 2,048 Mbps. I collegamenti in entrata
+(da VSAT a hub) sono in genere a 9600 bps. Tipicamente i sistemi VSAT supportano scambi di dati
+interattivi di brevissima durata (burst). Un'applicazione tipica è quella di fornire, in tempo quasi
+reale, informazioni di tipo POS (point of sales, punto vendita), inoltrando i dati alla sede centrale
+dove si trova l'hub VSAT.
+
+
+
+Bibliografia
+ A. B. Carlsson, Communication Systems, McGraw-Hill Book Company, 1986.
+ Freeman, Roger L., Fundamentals of Telecommunications, 2nd ed. Wiley-
+Interscience, 2005.
