@@ -1,0 +1,735 @@
+SENTENZA
+
+Tribunale Sez. spec. Impresa - Roma, 20/04/2020,
+
+Intestazione
+Tribunale di Roma
+AREA COMMENTO SENTENZA
+
+Viene richiesto al candidato di commentare la sentenza sottosposta. Si dovrà, pertanto: - redigere una o più massime; - riportare, sinteticamente, 
+i fatti in causa; - analizzare gli istituti affrontati nella decisione (limitarsi esclusivamente alla responsabilità dei soci di s.r.l.).
+
+
+
+
+
+
+Sezione specializzata in materia di impresa
+Sedicesima Sezione civile
+letti gli atti e le deduzioni delle parti,
+a scioglimento della riserva assunta all'udienza del
+24 febbraio 2020; il
+Giudice, dott. Guido Romano,
+premesso che:
+• con atto di citazione ritualmente notificato, il
+Fallimento “Costruzioni
+MA.GI.F. s.r.l. in liquidazione” (n. 737/2018) conveniva
+in giudizio i sig.ri
+A.C., T. C. ed E. C., nonché la C. Costruzioni Immobiliare
+s.r.l. per ottenere:
+(omissis)
+
+osserva quanto segue
+
+1. Sulla delimitazione del thema decidendum della domanda cautelare.
+Il Fallimento “Costruzioni MA.GI.F. s.r.l. in liquidazione” (n. 737/2018), in persona
+del curatore, ha instaurato il giudizio di merito nei confronti dei sig.ri A., T. ed E. C.,
+al fine di ottenere l'accertamento della responsabilità di questi ultimi per avere
+concorso, rispettivamente nella qualità di amministratore unico e legale
+rappresentante della Costruzioni MA.GI.F. s.r.l., e di soci della medesima società,
+al compimento di atti contra legem, intenzionalmente diretti a depauperarne il
+patrimonio immobiliare, con conseguente condanna al risarcimento del danno
+cagionato al patrimonio sociale e, quindi, al ceto creditorio.
+In tesi, il dissesto era stato determinato dal compimento dell'operazione di
+scissione societaria con cui la Costruzioni MA.GI.F. s.r.l., nel 2015, si spogliava
+della quasi totalità del patrimonio immobiliare, trasferendola – senza rapporto di
+cambio - alla C. Costruzioni Immobiliare s.r.l., che presentava la medesima
+compagine sociale della conferente. Per tale ragione il Fallimento attore citava in
+giudizio anche la società beneficiaria ed il suo amministratore, sig. T. C., al fine di
+sentirli condannare, in solido, al risarcimento del danno cagionato all'integrità del
+patrimonio della società scissa.
+La curatela attrice agiva altresì, in via principale, per sentir dichiarare inefficace ex
+artt. 66 l.f. e 2901 c.c. l'atto di compravendita immobiliare, del 7.3.2016, con cui la
+Costruzioni MA.GI.F. s.r.l., già posta in liquidazione, trasferiva alla C. Costruzioni
+Immobiliare s.r.l. il patrimonio residuo; chiedeva infine, in via subordinata, la
+revocatoria ex artt. 66 l.f. e 2901 c.c. degli effetti dell'atto di scissione societaria del
+13.5.2015.
+Successivamente, il Fallimento della “Costruzioni MA.GI.F. s.r.l. in liq.” chiedeva al
+Tribunale, nell'ambito di tale giudizio di merito, di autorizzare il sequestro
+conservativo (art. 671 c.p.c.) di tutti i beni appartenenti ai resistenti sino alla
+concorrenza del credito risarcitorio azionato, pari ad euro 2.700.000,00, oltre
+interessi legali, rivalutazione monetaria e spese; in relazione alla domanda
+subordinata, chiedeva inoltre di autorizzare il sequestro conservativo di tutti i beni
+immobili trasferiti in proprietà alla C. Costruzioni Immobiliare s.r.l. con l'operazione
+di scissione del 13.5.2015 (art. 2905, secondo comma, c.c.).
+Così ricostruita, in estrema sintesi, la vicenda processuale, e circoscritto il thema
+decidendum – in questa sede – alla sola domanda cautelare, si esaminano ora i
+presupposti della tutela invocata ex art. 671 c.p.c.
+2. Sul fumus boni iuris dell'invocata tutela cautelare.
+La domanda di sequestro conservativo proposta in corso di causa dalla curatela
+del Fallimento “Costruzioni MA.GI.F. s.r.l. in liq.” è fondata e deve, pertanto, essere
+accolta per i motivi che seguono.
+Preliminarmente, va rammentato che, ai sensi dell'art. 2905 c.c., il sequestro
+conservativo può essere chiesto dal creditore che abbia fondato timore di perdere
+la garanzia patrimoniale del proprio credito, su tutti i beni e i crediti di cui il debitore
+risulti titolare.
+Dunque, a livello sostanziale, il “sequestro conservativo” rappresenta un mezzo di
+conservazione della garanzia patrimoniale, costituita, ai sensi dell'art. 2740 c.c., da
+tutti i beni presenti e futuri del debitore; a livello processuale, è invece un tipico
+rimedio cautelare, cui si applicano le disposizioni di cui agli artt. 669 bis e ss. c.p.c.
+(art. 669 quaterdecies c.p.c.), comportante l'apposizione di un vincolo (materiale e
+giuridico) sul bene sequestrato, implicante la sottrazione della disponibilità di
+quest'ultimo in capo al debitore proprietario, per tutta la durata e fino alla
+definizione del giudizio di merito.
+In concreto, il sequestro importa l'inefficacia, nei confronti del creditore
+sequestrante, degli atti dispositivi del bene sequestrato, medio tempore posti in
+essere dal debitore, che recano o, più semplicemente, possono recare pregiudizio
+(c.d. periculum damni) alle ragioni del creditore medesimo. Si tratta, pertanto, di
+uno strumento di garanzia efficace nei casi in cui vi sia il rischio di occultamento,
+materiale o giuridico, di dispersione dei propri beni da parte del debitore, che
+precluderebbe al creditore il successivo soddisfacimento, eventualmente in via
+coattiva, della propria pretesa.
+Per la concessione del provvedimento di sequestro conservativo sono richiesti,
+naturalmente, sia il fumus boni iuris sia il periculum in mora (Cass. civ., sez. III,
+26/06/1998, n. 6336; Cass. civ., sez. lav. 3/02/1996, n. 927).
+In particolare, il fumus è dato dall'esistenza di un diritto di credito, che può, peraltro,
+pacificamente, anche essere illiquido o inesigibile e può trattarsi, altresì, di credito
+“litigioso”, cioè di un credito ancora sub iudice. Il periculum in mora, invece, è
+rappresentato dal fondato timore di perdita, dispersione o diminuzione della
+garanzia del proprio credito; dal momento che il patrimonio del debitore è destinato
+a costituire garanzia dei creditori, è evidente l'interesse di questi ultimi alla
+conservazione dell'integrità del patrimonio del debitore, sul quale, laddove,
+insoddisfatti, potranno poi valersi in sede di esecuzione coattiva.
+Ciò posto sul piano generale, si tratta di verificare se detti requisiti sussistano o
+meno nel caso di specie.
+Iniziando l'analisi dall'esame del primo dei due presupposti, deve valutarsi, in
+questa sede, la probabile fondatezza dell'azione di responsabilità proposta dal
+Fallimento attore nei confronti dell'amministratore e dei soci della Costruzioni
+MA.GI.F. s.r.l., nonché nei confronti della C. Costruzioni Immobiliare s.r.l. e del suo
+amministratore, sig. T. C..
+A tal proposito, giova innanzi tutto ribadire che, secondo le prospettazioni di parte
+ricorrente, sussiste la responsabilità del sig. A.C., amministratore unico e legale
+rappresentante della Costruzioni MA.GI.F. s.r.l., nonché socio di maggioranza della
+stessa, e la concorrente responsabilità dei sig.ri T. ed E. C., soci della Costruzioni
+MA.GI.F. s.r.l., per il danno arrecato al patrimonio della società, ormai fallita, in
+ragione di una pluralità di condotte contra legem, intenzionalmente dirette a
+depauperare il patrimonio della predetta società al fine di sottrarre, ai creditori
+sociali, la garanzia patrimoniale, all'epoca costituita da un cospicuo patrimonio
+immobiliare.
+Nel dettaglio, secondo il Fallimento ricorrente gli odierni resistenti, nel 2015,
+avrebbero, nei rispettivi ruoli, progettato ed autorizzato il compimento di
+un'operazione di scissione societaria finalizzata esclusivamente a trasferire il
+patrimonio immobiliare della Costruzioni MA.GI.F. s.r.l. alla beneficiaria, C.
+Costruzioni Immobiliare s.r.l. (avente la medesima compagine sociale);
+l'alienazione dell'attivo patrimoniale sarebbe stata accompagnata dal trasferimento
+soltanto di una minima parte delle passività della scissa (pari ad euro 1.144.510,00
+su un totale di quasi cinque milioni di euro, al 31 dicembre 2014), senza che il
+depauperamento patrimoniale (pari ad euro 2.678.298,00) fosse in qualche modo
+controbilanciato. Inoltre, l'operazione non determinava l'assegnazione ai soci della
+scissa di quote della beneficiaria (per espressa rinuncia dei soci medesimi).
+Peraltro, la società beneficiaria avrebbe, a sua volta, rivenduto a terzi – con
+successivi atti dispositivi, a breve distanza temporale gli uni dagli altri - gli immobili
+trasferitile dalla società conferente, così neutralizzando l'effetto della responsabilità
+solidale ex art. 2506 quater, terzo comma, c.c., con il massimo nocumento dei
+creditori della Costruzioni MA.GI.F. s.r.l.
+In tale contesto, la curatela attrice ha dedotto la responsabilità dei convenuti a vario
+titolo, in ragione della carica rivestita al tempo della scissione e del ruolo in
+concreto svolto nell'ambito dell'operazione societaria. In primo luogo, il Fallimento
+ha imputato al sig. A.C.: a) in qualità di amministratore della Costruzioni MA.GI.F.
+s.r.l. sin dal 2007, di avere predisposto il progetto di scissione parziale
+(20.02.2015) ed averlo eseguito con il trasferimento dei beni immobili (per atto
+pubblico del 13.5.2015) (art. 2476, primo e sesto comma, c.c.); b) in qualità di socio
+al 50% della Costruzioni MA.GI.F. s.r.l., di avere intenzionalmente autorizzato detta
+scissione nell'assemblea straordinaria del 5.3.2015 (art. 2476, ottavo comma, c.c.);
+c) in qualità di socio al 50% della beneficiaria C. Costruzioni Immobiliare s.r.l. e al
+contempo socio al 50% della società scissa, di avere deliberato la scissione in
+parola pur avendo un interesse in conflitto con quello della società Costruzioni
+MA.GI.F. (art. 2634, primo comma, c.c.).
+In secondo luogo, il Fallimento ha imputato ai sig.ri T. ed E. C., soci al 25% della
+Costruzioni MA.GI.F. s.r.l., di avere agito intenzionalmente a danno della società
+scissa e dei suoi creditori con l'approvazione in sede assembleare del progetto di
+scissione parziale.
+Infine, sempre secondo la prospettazione della parte ricorrente, la C. Costruzioni
+Immobiliare s.r.l. e il suo amministratore unico, T. C., al contempo socio al 25%
+della stessa società e al 25% della Costruzioni MA.GI.F. s.r.l. avrebbero concorso,
+insieme ai soci e all'amministratore della società conferente, alla produzione del
+danno derivante dall'operazione di scissione per cui è causa (avendo approvato il
+progetto di scissione e successivamente avendo alienato a terzi gli immobili
+trasferiti alla C. Costruzioni Immobiliare s.r.l.).
+Da tali condotte sarebbe derivato, in capo alla società scissa e al ceto creditorio, un
+grave pregiudizio di natura patrimoniale.
+Tali i profili di responsabilità dedotti in giudizio, si deve ora esaminare – in sede
+cautelare - la probabile fondatezza dell'azione di responsabilità proposta dal
+Fallimento attore nei confronti del sig. A.C., al contempo amministratore unico e
+legale rappresentante della Costruzioni MA.GI.F. s.r.l.
+2.1. La responsabilità degli amministratori di s.r.l. per inosservanza degli
+obblighi relativi alla conservazione dell'integrità del patrimonio sociale. Cenni
+in diritto.
+L'art. 2476 c.c. pone una disciplina sintetica della responsabilità degli
+amministratori verso la società (a responsabilità limitata), i soci ed i terzi.
+Per ciò che in questa sede maggiormente interessa, gli amministratori sono
+solidalmente responsabili verso la società dei danni derivanti dall'inosservanza dei
+doveri ad essi imposti dalla legge e dall'atto costitutivo per l'amministrazione della
+società (art. 2476, primo comma, c.c.); la norma, nonostante non richiami più l'art.
+2392 c.c., presenta profili comuni con la responsabilità degli amministratori verso la
+s.p.a.
+Inoltre, gli amministratori sono responsabili per i danni cagionati ai creditori sociali
+per non aver osservato gli obblighi inerenti alla conservazione del patrimonio
+sociale (art. 2476, sesto comma, c.c., come riformulato dal d.lgs. 14/2019). Quanto
+a tale profilo, in passato – nel silenzio del legislatore – la giurisprudenza di
+legittimità riteneva applicabile la disciplina dettata dagli artt. 2394 e 2394 bis c.c.
+con riferimento alle società per azioni, in forza dell'art. 12 disp. prel. c.c. In
+particolare, il ricorso all'analogia poggiava sulla considerazione che la disciplina
+della responsabilità degli amministratori verso i creditori sociali nella società per
+azioni trovava la stessa ratio nella società a responsabilità limitata: in caso
+contrario, quest'ultima avrebbe costituito l'unico tipo societario che prevedeva la
+responsabilità limitata senza alcun contrappeso in termini di responsabilità verso i
+creditori sociali.
+Come noto, l'art. 378 del d.lgs. 14/2019 ha inserito nell'art. 2476 c.c. un nuovo
+sesto comma (in vigore dal 16 marzo 2019), così estendendo alle s.r.l. l'azione di
+responsabilità dei creditori nei confronti degli amministratori in caso di violazione
+degli obblighi inerenti alla conservazione del patrimonio sociale, quando tale
+patrimonio risulti insufficiente al soddisfacimento dei loro crediti.
+Dal momento che l'intervento additivo del legislatore si pone in linea di continuità
+con i principi elaborati della giurisprudenza di legittimità, ed in assenza di pronunce
+successive all'entrata in vigore della recente riforma, la (quasi completa) simmetria
+tra la disciplina della responsabilità dell'organo gestorio della s.r.l. e la disciplina
+prevista per le società azionarie consente di richiamare i consolidati approdi
+interpretativi elaborati dalla Suprema Corte, prima del 2019, nel quadro normativo
+proprio delle s.p.a.
+Con riguardo alla legittimazione attiva del curatore, non vi è dubbio che, anche in
+caso di fallimento della s.r.l., l'organo concorsuale sia legittimato all'introduzione
+dell'azione di responsabilità ai sensi dell'art. 146, secondo comma lett. a), l.f., il
+quale fa generico riferimento all'esercizio di qualsiasi azione di responsabilità
+contro amministratori, componenti degli organi di controllo, direttori generali e
+liquidatori di società, così confermando l'interpretazione per cui, anche nel testo
+precedente al d.lgs. 6/2003, si riconosceva la legittimazione del curatore
+all'esercizio delle azioni comunque esercitabili dai soci o dai creditori nei confronti
+degli amministratori, indipendentemente dallo specifico riferimento agli artt. 2393 e
+2394 c.c. (Cass. civ., Sez. Un., 23/01/2017, n. 1641; Cass. civ., sez. I, 26/08/2016,
+n. 17359; Cass. civ., sez. I, 21/07/2010, n. 17121).
+In applicazione di tali principi, appare quindi sussistente la legittimazione attiva in
+capo alla curatela del Fallimento “Costruzioni MA.GI.F. s.r.l. in liq.” che ha agito al
+fine di far accertare, innanzitutto, la responsabilità dell'amministratore della società
+conferente, coinvolto nella complessiva operazione di spoliazione patrimoniale de
+qua agitur.
+Inoltre, è costante nella giurisprudenza di legittimità l'affermazione secondo cui per
+effetto del fallimento di una società di capitali, le (diverse) fattispecie di
+responsabilità degli amministratori di cui agli artt. 2392 e 2394 c.c. confluiscono in
+un'unica azione, dal carattere unitario ed inscindibile (cfr., sul punto, Cass. civ.,
+sez. I, 20/09/2012, n. 15955; Cass. civ., sez. I, 29/10/2008, n. 25977), all'esercizio
+della quale è legittimato, in via esclusiva, il curatore del fallimento, ai sensi dell'art.
+146 l.f., che può, conseguentemente, formulare istanze risarcitorie verso gli
+amministratori, i liquidatori ed i sindaci tanto con riferimento ai presupposti della
+responsabilità (contrattuale) di questi verso la società (artt. 2392,2407 c.c.), quanto
+a quelli della responsabilità (extracontrattuale) verso i creditori sociali (art.
+2394,2407 c.c., cfr., altresì, per tutte Cass. 22/10/1998, n. 10488). È di evidenza
+come gli esposti principi ben possano trovare applicazione oltre i confini della
+s.p.a., e quindi anche laddove la curatela – come nella specie - agisca per ottenere
+l'accertamento della responsabilità ai sensi dell'art. 2476, primo e sesto comma,
+c.c.
+Ciò posto, venendo all'esame del contenuto giuridico dell'azione sociale di
+responsabilità, nonostante l'art. 2476, primo comma, c.c. non riproduca la formula
+contenuta nell'art. 2392 c.c., si può ritenere comunque che la norma presupponga
+una diligenza di carattere professionale, determinata dalla natura dell'incarico e
+dalle loro specifiche competenze degli amministratori chiamati a guidare la società.
+In particolare, si ritiene dovuta la diligenza professionale di cui all'art. 1176,
+secondo comma, c.c. di cui il riferimento alla natura dell'incarico (ex art. 2392 c.c.)
+rappresenta evidente specificazione (così, in giurisprudenza, Trib. Roma,
+19/10/2015; Trib. Milano, 28/02/2011).
+Si tratta, a ben vedere, di un'azione che mira ad accertare la sussistenza di una
+responsabilità contrattuale, che trova la sua fonte nell'inadempimento dei doveri
+imposti agli amministratori dalla legge o dall'atto costitutivo, ovvero
+nell'inadempimento dell'obbligo generale di vigilanza o dell'altrettanto generale
+obbligo di intervento preventivo e successivo. Ne consegue, in punto di onus
+probandi, che incombe sull'attore l'onere di dimostrare la sussistenza delle
+violazioni agli obblighi (trattandosi di obbligazioni di mezzi e non di risultato), il
+nesso di causalità tra queste ed il danno verificatosi, mentre incombe sugli
+amministratori l'onere di dimostrare la non imputabilità a sé del fatto dannoso,
+fornendo la prova positiva dell'osservanza dei doveri e dell'adempimento degli
+obblighi loro imposti (Cass. civ., sez. I, 24/03/1999, n. 2772; Cass. civ., sez. I,
+22/10/1998, n. 10488).
+Di contro, l'azione di cui all'art. 2476, sesto comma, c.c. – in relazione alla quale si
+può richiamare l'interpretazione data, dalla giurisprudenza di legittimità, all'art. 2394
+c.c. - costituisce conseguenza dell'inosservanza degli obblighi inerenti alla
+conservazione dell'integrità del patrimonio sociale, la cui natura extracontrattuale
+presuppone l'assenza di un preesistente vincolo obbligatorio tra le parti ed un
+comportamento dell'amministratore funzionale ad una diminuzione del patrimonio
+sociale di entità tale da rendere lo stesso inidoneo per difetto ad assolvere la sua
+funzione di garanzia generica (art. 2740 c.c.), con conseguente diritto del creditore
+sociale di ottenere, a titolo di risarcimento, l'equivalente della prestazione che la
+società non è più in grado di compiere (cfr., Cass. civ., sez. I, 22/10/1998, n.
+10488; Cass. civ., 28/11/1984, n. 6187; Cass. civ., 10/06/ 1981, n. 3755).
+La qualificazione della responsabilità in parola come aquiliana, lungi dall'essere
+questione meramente definitoria, ha profonde ricadute applicative in punto di onus
+probandi (spetta invero al curatore provare la condotta illecita dell'amministratore,
+l'eventus damni, il nesso eziologico e l'elemento soggettivo) e di durata del termine
+di prescrizione.
+2.2. I singoli addebiti mossi dalla curatela del Fallimento “Costruzioni
+MA.GI.F. s.r.l. in liquidazione”.
+Richiamato il quadro degli addebiti formulati dal Fallimento “Costruzioni MA.GI.F.
+s.r.l. in liq.” e da quest'ultimo posti a sostegno anche della richiesta di sequestro
+conservativo, occorre osservare che gli stessi si presentano, allo stato,
+verosimilmente fondati, sicché la misura cautelare può – già sotto tale profilo –
+essere concessa.
+In particolare, è fondato l'addebito di responsabilità mosso, dalla curatela
+ricorrente, ai sensi dell'art. 2476, sesto comma, c.c.
+Invero, emerge ex actiis che il sig. A.C., in qualità di amministratore unico e legale
+rappresentante della Costruzioni MA.GI.F. s.r.l., in data 20 febbraio 2015 elaborava
+un progetto di scissione parziale con cui, in seguito all'approvazione dell'assemblea
+straordinaria dei soci (di cui anche egli faceva parte, come socio di maggioranza
+detentore del 50% del capitale), la società avrebbe trasferito (come di fatto è
+accaduto) la quasi totalità del patrimonio immobiliare della scissa in favore della
+beneficiaria, C. Costruzioni Immobiliare s.r.l., che condivideva, con la prima, la
+medesima compagine sociale. Nel dettaglio, dalla consultazione del progetto si
+ricava che, con l'operazione in parola, la società scissa, a fronte di un “attivo
+immobiliare da vendere” pari ad euro 4.302.808,54 (al 31.12.2014), trasferiva in
+favore della beneficiaria beni immobili dell'ingente valore di euro 3.822.808,54, con
+evidente depauperamento del proprio patrimonio a danno sia della società, sia dei
+creditori sociali, i quali si vedevano privati della garanzia patrimoniale costituita da
+beni prontamente liquidabili in caso di crisi ovvero di insolvenza (come quella che,
+di fatto, si è poi verificata).
+L'alienazione della quasi totalità del patrimonio immobiliare non era però
+accompagnata dall'accollo, da parte della beneficiaria, della gran parte dei debiti (in
+misura corrispondente all'attivo), posto che la scissa si limitava a cedere passività
+per euro 1.144.510,53 (“finanziamenti di terzi”), a fronte di una passivo che
+ammontava, nel complesso, ad euro 4.879.944,88; non solo, ma a tale
+depauperamento (pari ad euro 2.678.298,00) non corrispondeva alcun incremento
+del patrimonio della conferente, poiché l'amministratore predisponeva l'operazione
+ai sensi dell'art. 2506, secondo comma, c.c., vale a dire senza distribuzione delle
+quote della società beneficiaria (la quale manteneva inalterato il capitale sociale
+pari ad pari ad euro 10.000,00), e senza che la perdita patrimoniale fosse in
+qualche modo controbilanciata (anzi, il progetto prevedeva la espressa rinuncia, da
+parte dei soci, alla relazione sulla congruità del “rapporto di cambio” ex art. 2501
+sexies c.c.). Appare del tutto evidente come la scelta, formalmente motivata dalla
+mera coincidenza tra la compagine sociale della conferente e della beneficiaria,
+disveli il preciso intento, dell'organo gestorio della Costruzioni MA.GI.F. s.r.l. in
+primis, di cagionare una doppia perdita alla società scissa: a) perdita patrimoniale,
+pari al patrimonio immobiliare sottratto alla Costruzioni MA.GI.F. s.r.l.; b) perdita di
+capitale, poiché la scissa ha dovuto assorbire la minusvalenza generata dalla
+scissione per euro 2.678.298,00 con il controvalore di preesistenti riserve ordinarie.
+Ed è altrettanto evidente che l'assegnazione alla beneficiaria della parte
+preponderante dell'attivo della conferente – lungi dall'essere stata attuata al fine di
+riorganizzare l'assetto aziendale in vista del salvataggio dell'iniziativa
+imprenditoriale - abbia piuttosto posto quest'ultima nell'impossibilità di continuare
+ad operare e far fronte regolarmente alle obbligazioni assunte, come confermato
+dalla circostanza che la predetta società, il 20.1.2016, quindi a breve distanza di
+tempo dall'atto di scissione, veniva messa in liquidazione e poi cancellata dal
+Registro delle Imprese (il 28.3.2018), ed il 24.10.2018 veniva infine dichiarata
+fallita.
+Per le ragioni sin qui esposte la condotta del sig. A.C. che ha dato luogo ad
+un'azione di spoliazione complessiva del patrimonio sociale della Costruzioni
+MA.GI.F. s.r.l. – appare eziologicamente collegata alla lesione, diretta, del
+patrimonio della società amministrata nonché al pregiudizio, riflesso, al patrimonio
+dei creditori.
+Risulta pertanto integrato il presupposto oggettivo della responsabilità in parola.
+Sul versante soggettivo, è appena il caso di osservare che l'amministratore,
+essendo allo stesso tempo anche socio della beneficiaria, ed avendo quindi
+deliberato l'approvazione della scissione in occasione dell'assemblea straordinaria
+della beneficiaria, non poteva non conoscere gli effetti pregiudizievoli che
+l'operazione avrebbe prodotto nel patrimonio della scissa.
+In sostanza, ad un primo e sommario esame, la condotta contestata risulta
+sussumibile nell'ipotesi di responsabilità di cui all'art. 2476, sesto comma, c.c.;
+l'accertamento della sussistenza del fumus in ordine a tale, primo, profilo di
+responsabilità consente di ritenere assorbito l'esame degli ulteriori addebiti,
+formulati ex artt. 2476, primo comma, e 2634, primo comma, c.c.
+2.3. La responsabilità dei soci per avere “intenzionalmente” concorso al
+compimento di atti dannosi per i creditori sociali. Cenni in diritto.
+La curatela ricorrente ha, poi, addebitato ai soci A., T. ed E. C. la responsabilità ai
+sensi dell'art. 2476, ottavo comma, c.c.: detta norma estende la responsabilità
+solidale, unitamente agli amministratori, anche ai soci che si siano intromessi nella
+gestione della società, intenzionalmente decidendo o autorizzando il compimento
+di atti dannosi per la società, per i soci e per i terzi.
+È pacifico che la disciplina, introdotta ex novo dalla riforma del diritto societario
+(d.lgs. n. 6/2003), tende a fare da contrappeso ai più ampi poteri gestori
+riconosciuti ai soci di società a responsabilità limitata.
+Sul versante oggettivo, presupposti per l'applicazione della suddetta normativa
+sono: a) l'alterità soggettiva del socio rispetto agli amministratori (se tutti i soci
+fossero amministratori, si applicherebbero direttamente il primo e terzo comma); b)
+il compimento, da parte dell'amministratore della società, di un atto “dannoso”,
+tenuto conto che la condotta agevolativa dei soci si pone in “rapporto di
+accessorietà” rispetto a quella tenuta dall'amministratore; c) che il soggetto che
+decide od autorizza (intenzionalmente) il compimento dell'atto dannoso sia un
+socio.
+(intenzionalmente) il compimento dell'atto dannoso sia un socio.
+Nel tipizzare tale nuova ipotesi di responsabilità dei soci, il legislatore della riforma
+ha sostanzialmente operato una netta distinzione tra l'azione sociale (disciplinata
+dai primi commi) e l'azione risarcitoria personale dei soci e dei terzi (disciplinata
+dall'attuale ottavo comma) ed ha ampliato il numero dei soggetti potenzialmente
+responsabili; infatti, oltre che sugli amministratori, la responsabilità grava, qualora
+costoro abbiano un qualche potere decisionale in ordine al compimento di un
+determinato atto di gestione della società, anche su tutti quei soci che
+“intenzionalmente” abbiano deciso o autorizzato detto atto, a prescindere dal fatto
+che ciò sia avvenuto in forza di un potere loro attribuito per legge o per statuto
+ovvero semplicemente di fatto ed anche solo in via occasionale.
+Una delle questioni più dibattute riguarda l'interpretazione di detta previsione
+normativa e l'ambito di operatività della stessa; in particolare ci si era domandati se
+rilevassero, in base ad una interpretazione restrittiva e formalistica, solo gli atti che
+venivano autorizzati o decisi dal socio nell'ambito dei poteri attribuitigli dalla legge o
+dall'atto costitutivo o se viceversa potesse acquistare rilievo, secondo
+un'interpretazione estensiva, anche l'impulso all'attività gestoria che il socio avesse
+comunque dato a livello decisionale sia pure al di fuori di formali procedimenti di
+decisione e/o di autorizzazione.
+Ritiene il Giudicante di ribadire l'adesione all'interpretazione più estensiva,
+coerentemente con la ratio sottesa all'innovazione legislativa, finalizzata invero ad
+evitare l'elusione delle responsabilità in capo ai soggetti, che di fatto gestiscano la
+società o comunque ne influenzino la gestione: non viene in tale contesto posto in
+crisi il generale principio della non responsabilità del socio per le obbligazioni
+sociali, in quanto tale responsabilità serve a garantire la necessaria correlazione tra
+l'attribuzione di un potere e la responsabilità di chi ne sia investito facendo sì che il
+socio risponda, in solido con gli amministratori, del modo in cui ha esercitato il
+potere di amministrazione attribuitogli.
+Ribadito che la responsabilità del socio ex art. 2476, ottavo comma, c.c. non è
+sussumibile in quella dell'amministratore di fatto (essendo l'amministratore di fatto,
+che non necessariamente è anche socio della società, colui che chi si è ingerito
+sistematicamente e non occasionalmente nella gestione sociale), ai fini della
+applicazione della disciplina in argomento appare allora necessario prendere in
+considerazione tutte quelle manifestazioni di volontà espresse dai soci anche in
+forme non istituzionali e meramente ufficiose, ma tali in ogni caso da evidenziare
+l'ingerenza o anche l'influenza effettiva spiegata da costoro sugli amministratori.
+Nessun dubbio, poi, sussiste in ordine alla circostanza che la condotta del socio
+possa anche esplicarsi nel voto espresso nell'assemblea ovvero nel consenso
+manifestato alle decisioni assunte mediante consultazione scritta (art. 2479, terzo
+comma c.c.).
+Sul versante soggettivo, la legge richiede poi che i soci abbiano “intenzionalmente
+deciso o autorizzato il compimento di atti dannosi per la società, i soci o i terzi”,
+così valorizzando l'elemento psicologico che deve necessariamente connotare la
+condotta dei soci stessi.
+L'avverbio “intenzionalmente” potrebbe essere interpretato o riferendo
+l'intenzionalità all'atto decisorio e/o autorizzativo ovvero riferendo l'intenzionalità
+all'atto compiuto ovvero ancora all'evento dannoso stesso ed alle conseguenze
+contra ius che ne derivano.
+Secondo la prima tesi l'intenzionalità verrebbe ad essere interpretata come mera
+consapevolezza e volontà della decisione o dell'autorizzazione e quindi del
+processo decisionale o autorizzativo, indipendentemente dalla coscienza e volontà
+anche dell'evento dannoso, ma in questo caso la norma sarebbe pleonastica e di
+fatto inutile.
+Analogamente ritiene il Giudicante di non poter aderire alla terza tesi, che
+richiederebbe l'intenzionalità dell'eventus damni e limiterebbe l'applicazione della
+norma al solo caso in cui il socio avesse agito con dolo specifico, ossia con la
+specifica coscienza e volontà di arrecare danno alla società, agli altri soci o a terzi:
+si tratta di una interpretazione eccessivamente rigorosa ed anche gravosa in
+termini di prova da porre a carico dei pretesi danneggiati.
+Preferibile appare allora la tesi intermedia, che trova riscontro nel dato testuale,
+ove infatti emerge il riferimento dell'intenzionalità del decidere non al danno, ma
+all'atto compiuto, ossia alla condotta dannosa posta in essere dall'amministratore in
+concorso con il socio. In altre parole, nel disegno del legislatore, l'intenzionalità è
+costituita dalla piena coscienza di compiere quell'atto decisionale o autorizzatorio
+potenzialmente dannoso e, in definitiva, dalla riferibilità psicologica dell'atto al
+socio.
+Dunque deve trattarsi di atti o comportamenti, posti in essere dai soci nella fase
+decisionale anche fuori dalle incombenze formalmente previste per legge o per
+statuto e tali da supportare intenzionalmente l'azione illegittima e dannosa poi
+posta in essere dagli amministratori; inoltre, è sufficiente che vi sia la
+consapevolezza, frutto di conoscenza o di esigibile conoscibilità, da parte del socio
+dell'antigiuridicità dell'atto e che, nonostante ciò, costui partecipi alla fase
+decisionale finalizzata al successivo compimento di quell'atto da parte
+dell'amministratore.
+A tal riguardo l'antigiuridicità dell'atto viene a configurarsi non solo quando l'atto
+deciso è contrario alla legge o all'atto costitutivo della società, ma anche quando
+l'atto, pur se di per sé lecito, è esercitato in modo abusivo, cioè con una finalità non
+riconducibile allo scopo pratico posto a fondamento del contratto sociale.
+In altre parole, oltre che al rispetto della legge e del principio generale del neminem
+laedere, i soci sono pur sempre tenuti ad osservare i doveri di correttezza e buona
+fede nei confronti della società, degli altri soci e dei terzi, dovendo quindi costoro
+comunque evitare di compiere o di concorrere a compiere un atto che, se pur
+astrattamente lecito, possa di fatto risultare dannoso per gli altri soci, p.es. di
+minoranza, e nel contempo essere privo di un vantaggio apprezzabile per la
+società: spunti in tal senso si possono ricavare dalla giurisprudenza di legittimità
+(cfr. Cass. civ., sez. I, 12/12 2005, n. 27387; Cass. civ., sez. I, 11/06/2003, n. 9353)
+che, seppur elaborata in materia di impugnazione di delibere di società per azioni,
+evidenzia un principio di fondo di generale applicazione in ordine alla buona fede in
+senso oggettivo (art. 1375 c.c.), alla cui osservanza deve essere improntata
+l'esecuzione del contratto di società.
+Se è previsto ex art. 1375 c.c. che il contratto deve essere eseguito in buona fede,
+è allora evidente che tutte le determinazioni e decisioni dei soci, assunte
+formalmente o informalmente durante lo svolgimento del rapporto associativo,
+debbono essere considerate come veri e propri atti di esecuzione e devono
+conseguentemente essere valutate nell'ottica della tendenziale migliore attuazione
+del contratto sociale.
+Dunque, è da considerare antigiuridico anche un atto che in concreto si presenti
+espressione dell'inosservanza dell'obbligo di fedeltà allo scopo sociale e/o del
+dovere di correttezza e buona fede nell'esecuzione del contratto sociale.
+Così ricostruito il quadro normativo di riferimento, si esaminano ora gli addebiti in
+concreto mossi dalla curatela ai singoli soci della Costruzioni MA.GI.F. s.r.l. al fine
+di vagliarne la probabile fondatezza.
+2.4. I singoli addebiti mossi dalla curatela del “Fallimento Costruzioni
+MA.GI.F. s.r.l. in liquidazione”.
+Ritiene il Tribunale che sussistano ragioni per reputare che i soci della società
+fallita, E. e T. C., abbiano intenzionalmente autorizzato gli atti lesivi del patrimonio
+della Costruzioni MA.GI.F. s.r.l., ed in particolare l'atto di scissione depauperativa
+del patrimonio sociale, mentre non appare fondato l'addebito di responsabilità
+mosso al sig. A.C. ex art. 2476, ottavo comma, c.c. posto che questi, in quanto
+amministratore della società, è tenuto a rispondere direttamente ai sensi dell'art.
+2476, sesto comma, c.c.
+Attesa la sussistenza di tutti i requisiti di legge relativi alla responsabilità, solidale,
+di cui all'art. 2476, ottavo comma, c.c., sussiste il fumus anche con riferimento
+all'addebito innanzi esaminato.
+2.5. La responsabilità della C. Costruzioni Immobiliare s.r.l. e del suo
+amministratore, sig. T. C., ai sensi degli artt. 2043 e 2055 c.c.
+Circoscritto quindi l'addebito alle posizioni dei due soci che non rivestivano anche
+la carica di amministratore, nella specie appare indubbio che: a) i sig.ri T. ed E. C.,
+al momento dell'approvazione della scissione societaria, erano soci (al 25%
+ciascuno) della Costruzioni MA.GI.F. s.r.l.; b) in tale qualità, gli stessi,
+nell'assemblea straordinaria del 5 marzo 2015, approvavano il progetto di scissione
+elaborato dall'amministratore e la sua conseguente esecuzione; c) la condotta
+agevolativa dei soci rientra tra quelle prese in considerazione dall'art. 2476, ottavo
+comma, c.c., in quanto si tratta dell'approvazione di un atto (pregiudizievole)
+espressa in sede assembleare ex art. 2479 bis c.c.; d) quanto all'incidenza causale
+della condotta dei soci sulla realizzazione dell'atto di gestione pregiudizievole,
+poiché la scissione societaria è, per sua stessa natura, fattispecie a formazione
+progressiva (artt. 2506 bis ss c.c.), è agevole affermare che senza l'intervento,
+autorizzativo, dei soci, l'operazione non sarebbe venuta ad esistenza e, quindi, non
+avrebbe potuto arrecare alcun pregiudizio alle ragioni dei creditori azionate dalla
+curatela attrice; e) i soci autorizzavano un atto “antigiuridico” in quanto, pur
+essendo la scissione societaria uno strumento astrattamente lecito, in concreto lo
+schema procedimentale veniva utilizzato in modo abusivo, per raggiungere non già
+il fine della riorganizzazione delle strutture societarie attraverso una diversa
+allocazione degli asset all'interno delle compagini coinvolte (causa propria, lecita,
+dell'operazione), bensì quello illecito – di sottrarre il patrimonio immobiliare della
+società conferente alla garanzia patrimoniale dei creditori, a tutto vantaggio della
+società beneficiaria (la quale, a sua volta, si è prontamente spogliata del patrimonio
+trasferitole); f) infine, i soci della Costruzioni MA.GI.F. s.r.l., in quanto al contempo
+soci anche della società beneficiaria dell'attribuzione patrimoniale, non potevano
+non essere consapevoli della potenziale dannosità dell'operazione societaria, e
+nonostante ciò, prendevano parte alla fase decisionale finalizzata al successivo
+compimento di quell'atto da parte dell'amministratore. In altri termini i soci,
+consapevoli di prendere parte ad un'azione di spoliazione nel complesso
+depauperativa del patrimonio della società conferente, autorizzavano il
+compimento di un atto pregiudizievole per la società e per il relativo ceto creditorio.
+Il fumus boni iuris viene in rilievo anche con riguardo alla fondatezza dell'addebito
+di responsabilità che la curatela attrice ha mosso alla società beneficiaria della
+scissione, e al suo amministratore T. C., per avere concorso, insieme con
+l'amministratore ed i soci della conferente, alla produzione del danno cagionato alla
+società scissa e al ceto creditorio di quest'ultima.
+In proposito, la parte ricorrente rappresenta (pag. 15 e 16 del ricorso) che sia la C.
+Costruzioni Immobiliare s.r.l., sia l'amministratore unico e legale rappresentante,
+sig. T. C., avevano preso parte, deliberando in senso favorevole, all'operazione di
+scissione depauperatoria. In tesi, tale condotta avrebbe agevolato il dissesto che,
+in breve tempo, avrebbe portato alla liquidazione e poi al fallimento della MA.GI.F.
+Costruzioni s.r.l.
+Sul piano del diritto positivo, è noto che l'art. 2043 c.c. fa sorgere, in capo a colui
+che abbia commesso un fatto illecito, doloso o colposo, l'obbligo del risarcimento
+del danno, mentre il successivo art. 2055 c.c. – che guarda alla posizione di colui
+che ha subito tale danno - introduce, per il caso di illeciti plurisoggettivi, tanto di
+natura contrattuale quanto aquiliana, la responsabilità solidale dei danneggianti al
+fine di agevolare e rafforzare la posizione del danneggiato, consentendogli di
+rivolgersi, per l'intero, ad uno qualsiasi dei soggetti che hanno concorso a
+cagionare il danno, senza sopportare il rischio dell'incapienza patrimoniale di uno o
+alcuni di essi (per l'affermazione del principio generale, si vedano ex multis: Cass.
+civ., sez. II, 29/01/2015, n. 1674; Cass. civ., sez. III, 25/09/2014, n. 20192).
+Sul piano strutturale, l'art. 2043 c.c. è clausola generale, la quale prevede che il
+danno sia risarcibile in presenza di un evento ingiusto: trattandosi di ipotesi di
+responsabilità “atipiche”, non predeterminate dal legislatore, la giurisprudenza di
+legittimità è costante nell'affermare che la condotta illecita fa sorgere responsabilità
+risarcitoria soltanto qualora consista nella lesione di un interesse meritevole di
+tutela da parte dell'ordinamento (Cass. civ., sez. III, 20/04/2007, n. 9512; Cass.
+civ., sez. III, 17/05/2004, n. 9345).
+Tale responsabilità presuppone la concorrenza dei seguenti presupposti: a) fatto
+illecito; b) imputabilità del fatto al danneggiante; c) elemento soggettivo, dolo o
+colpa del danneggiante; d)nesso causale tra fatto ed evento dannoso (danno
+evento); e) danno conseguenza.
+Ancora sul piano strutturale, l'art. 2055 c.c., applicabile anche nel caso di concorso
+di responsabilità contrattuale ed extracontrattuale, postula che le azioni (od
+omissioni) di ciascuno dei danneggianti abbiano concorso in modo efficiente a
+produrre il danno (per il principio generale, ex multis: Cass. civ., sez. I, 12/12/2013,
+n. 27875; Cass. civ., sez. III, 8/08/2007, n. 17397; Cass. civ., sez. III, 16/12/2005,
+n. 27713).
+Ciò posto, nella specie la responsabilità della società beneficiaria che ha agito, in
+persona dell'amministratore e legale rappresentante T. C., contribuendo alla
+produzione del danno arrecato, insieme con altri, alla Costruzioni MA.GI.F. s.r.l., è
+astrattamente sussumibile nello schema di cui al combinato disposto dagli artt.
+2043 e 2055 c.c.
+Infatti, posto che tra i creditori della società scissa e l'amministratore della società
+beneficiaria non è intercorso alcun rapporto di natura contrattuale, in assenza di
+disciplina speciale è applicabile lo schema generale di cui all'art. 2043 c.c. (di cui,
+d'altronde, le ipotesi di responsabilità ex art. 2476, sesto e ottavo comma, c.c.
+costituiscono declinazioni nell'ambito del diritto societario); inoltre, detta
+responsabilità viene addebitata alla C. Costruzioni Immobiliare s.r.l. per avere
+offerto, con la propria condotta, un contributo eziologicamente collegato alla
+produzione del danno, che si aggiunge alle condotte pregiudizievoli, autonome e
+temporalmente distinte, degli organi sociali della conferente.
+In concreto, le circostanze di fatto - che trovano riscontro nelle allegazioni
+documentali della parte ricorrente – inducono a ritenere fondato l'addebito
+formulato, considerato che: a) l'organo amministrativo della società beneficiaria,
+sig. T. C. (il quale, si osserva, ha assunto la carica gestoria il 21 gennaio 2015,
+vale a dire appena un mese prima dell'elaborazione del progetto di scissione)
+redigeva il progetto di scissione de qua agitur; b) in punto di nesso eziologico, la
+scissione, come anticipato, è fattispecie a formazione progressiva (art. 2506 bis
+c.c.), sicché è agevole desumere che senza l'intervento dell'amministratore unico
+della società beneficiaria l'operazione depauperativa non avrebbe potuto essere
+portata a compimento; c) l'approvazione e deliberazione del progetto di scissione
+determinava, per la beneficiaria, un incremento dell'attivo patrimoniale (passato da
+un valore pari a zero ad un valore di euro 3.822.808,54) cui tuttavia non faceva
+seguito la cessione di quote di capitale in favore della società conferente, sicché
+emerge dal prospetto della situazione patrimoniale delle società coinvolte il danno
+arrecato, alla Costruzioni MA.GI.F. s.r.l., dall'operazione complessivamente
+considerata; d) sul versante soggettivo, dal momento che la società scissa
+presentava identica compagine sociale rispetto alla beneficiaria, l'organo
+amministrativo che autorizzava il progetto di scissione non poteva non conoscere il
+nocumento che l'intera operazione avrebbe arrecato alla Costruzioni MA.GI.F. s.r.l.,
+e, nonostante ciò, si determinava ad elaborare tale progetto (poi approvato dai
+soci); e) inoltre, il medesimo sig. T. C., in breve tempo, alienava a terzi il patrimonio
+immobiliare conferito alla C. Costruzioni Immobiliare s.r.l., così sottraendo ai
+creditori della Costruzioni MA.GI.F. s.r.l. anche il patrimonio su cui questi, in
+applicazione dell'art. 2506 quater, comma terzo, c.c., avrebbero potuto soddisfarsi
+in caso di incapienza del patrimonio della società scissa: la successiva cessione a
+terzi del patrimonio trasferito all'esito della cessione è ulteriore sintomo della
+circostanza che questi abbia concorso, con dolo, al depauperamento della società
+conferente.
+All'esito dell'esame sommario proprio del giudizio cautelare, ed impregiudicato
+l'accertamento che sarà condotto in sede di merito, si può quindi concludere per la
+configurazione della responsabilità solidale ex artt. 2043 e 2055 c.c. in capo alla C.
+Costruzioni Immobiliare s.r.l., in persona dell'amministratore unico, sig. T. C., per
+avere concorso intenzionalmente, ed in modo determinante, insieme ai soci e
+all'amministratore della società poi fallita, alla produzione del danno cagionato
+dall'azione di spoliazione del patrimonio della Costruzioni MA.GI.F. s.r.l.,
+pregiudizievole sia per la società, sia per il ceto creditorio.
+Ne consegue la sussistenza del fumus boni iuris sotteso alla domanda cautelare.
+2.6. La revocatoria ex artt. 66 l.f. e 2901 c.c. degli effetti traslativi dell'atto di
+scissione societaria del 13.5.2015.
+Nel giudizio di merito, la curatela attrice ha chiesto al Tribunale, in via subordinata,
+di accertare e dichiarare inefficace ex artt. 66 l.f. e 2901 c.c., rispetto alla massa
+dei creditori del Fallimento “Costruzioni MA.GI.F. s.r.l. in liq.”, l'atto di scissione
+parziale eseguito a rogito del Notaio dott. M. P., il 13.5.2015, mediante il quale la
+società conferente attribuiva alla C. Costruzioni Immobiliare s.r.l. la proprietà della
+quasi totalità degli immobili presenti nel proprio patrimonio (indicati nell'atto di
+citazione), ovvero, stante la sopravvenuta rivendita degli stessi a terzi da parte
+della società beneficiaria, di condannare la C. Costruzioni Immobiliare s.r.l. al
+pagamento del controvalore degli stessi, pari ad euro 852.000,00, oltre interessi,
+rivalutazione e salvo il maggior danno.
+In relazione a tale domanda, il Fallimento “Costruzioni MA.GI.F. s.r.l. in liq.” ha
+chiesto – nel ricorso cautelare – di autorizzare il sequestro conservativo ex art.
+2905, secondo comma, c.c. di tutti i beni immobili trasferiti dalla Costruzioni
+MA.GI.F. s.r.l. alla C. Costruzioni Immobiliare s.r.l., con l'atto di scissione
+richiamato.
+Va in proposito specificato che il ricorrente, in sede cautelare, non ha chiesto alcun
+provvedimento strumentale alla diversa azione revocatoria ex artt. 66 l.f. e 2901
+c.c. esperita al fine di ottenere l'inefficacia dell'atto di compravendita del 7 marzo
+2016 con cui la Costruzioni MA.GI.F. s.r.l. in liquidazione cedeva alla odierna
+resistente il residuo patrimonio immobiliare, sicché la relativa domanda non è
+oggetto di indagine ai fini del presente giudizio.
+Così perimetrato il thema decidendum, il Tribunale, pur conoscendo il dibattito sui
+rapporti tra azione revocatoria ed azione risarcitoria (su cui si veda, ad esempio,
+Cass. civ., sez. III, 13/01/1996, n. 251), osserva che, nella specie, l'atto di scissione
+di cui è chiesta l'inefficacia è stato seguito da numerosi atti di alienazione con cui la
+beneficiaria, C. Costruzioni Immobiliare s.r.l., ha, a sua volta, alienato a terzi i
+cespiti trasferitile dalla società scissa: tale condotta, oltre ad avere prodotto effetti
+immediatamente e volutamente depauperativi del patrimonio della Costruzioni
+MA.GI.F. s.r.l., ha evidentemente arrecato pregiudizio anche alle ragioni del ceto
+creditorio, pregiudizio ravvisabile nella necessità di ricercare e aggredire i beni e,
+soprattutto, nel rischio di incapienza dovuto al concorso con i creditori della stessa
+beneficiaria (Cass. pen., sez. V, 10/04/2015, n. 20370).
+Inoltre, tale condotta rende assai difficoltoso - almeno allo stato della cognizione
+demandata al giudice del cautelare - discriminare, tra i beni assegnati alla
+beneficiaria, quelli di cui la C. Costruzioni Immobiliare s.r.l. (sui quali l'esperimento
+dell'azione revocatoria sarebbe astrattamente possibile) e quelli di cui la società si
+è spogliata (in relazione ai quali non resta che il rimedio risarcitorio).
+Pertanto, rispondendo la società C. Costruzioni Immobiliare s.r.l. dell'obbligazione
+risarcitoria con tutto il proprio patrimonio e, dunque, anche con i beni assegnati in
+sede di scissione, l'esecuzione del sequestro conservativo concesso in relazione
+all'obbligazione risarcitoria (che, presumibilmente, il fallimento ricorrente iscriverà
+anche su tali beni) appare, almeno allo stato, pienamente garantire ogni diritto
+vantato dal fallimento della Costruzioni MA.GI.F. s.r.l.
+3. Sul periculum in mora .
+Chiarita, nei termini indicati, la sussistenza del fumus boni iuris, occorre esaminare
+altresì il profilo del periculum in mora.
+In proposito, si osserva che, come in precedenza accennato, ai fini della
+concessione del sequestro conservativo di cui all'art. 671 c.p.c., è sufficiente che
+ricorra il pericolo, anche non attuale, bensì meramente potenziale o, addirittura,
+semplicemente astratto (sul punto, si veda Trib. Bari, sent. del 16 novembre 2014),
+che la perdurante disponibilità, dei beni e dei crediti che compongono la garanzia
+patrimoniale del creditore, in capo al debitore, titolare dei beni medesimi,
+pregiudichi le possibilità di soddisfacimento della pretesa creditoria.
+In particolare, la giurisprudenza ha reiteratamente chiarito che, in tema di
+sequestro conservativo, il giudice di merito può far riferimento, alternativamente,
+tanto a “criteri oggettivi” – rappresentati dalla capacità patrimoniale del debitore in
+relazione all'entità del credito, da desumere da elementi concreti ed attuali –
+quanto ad “elementi soggettivi”, quali il comportamento del debitore che lasci
+fondatamente temere atti di depauperamento del suo patrimonio, senza che, ai fini
+della validità del provvedimento di convalida, le due categorie di presupposti
+debbano simultaneamente concorrere potendo il giudice fare alternativamente
+riferimento all'uno o all'altro dei menzionati presupposti (Cass. civ., sez. I,
+17/06/1998; Cass. civ., sez. II, 26/02/1998, n. 2139; ma si veda anche Cass. civ.,
+sez. III, 13/02/2002, n. 2081, secondo la quale la motivazione del provvedimento di
+convalida del sequestro conservativo può far riferimento a precisi, concreti fattori
+tanto oggettivi che soggettivi, poiché il requisito del periculum in mora può essere
+desunto sia da elementi oggettivi, concernenti la capacità patrimoniale del debitore
+in rapporto all'entità del credito, sia da elementi soggettivi, rappresentati dal
+comportamento del debitore, il quale lasci fondatamente presumere che, al fine di
+sottrarsi all'adempimento, ponga in essere atti dispositivi, idonei a provocare
+l'eventuale depauperamento del suo patrimonio; nella giurisprudenza di merito,
+Trib. Torre Annunziata, 3 dicembre 2014; Trib. Nola, 24 novembre 2011).
+Rileva il Tribunale che tale pericolo, anche solo potenziale, di pregiudizio alle
+ragioni creditorie del Fallimento “Costruzioni MA.GI.F. s.r.l. in liq.”, ricorra nel caso
+di specie, soprattutto in considerazione dell'elevato importo richiesto a titolo di
+risarcimento del danno (pari ad euro 2.700.000,00), il che già di per sé rende
+difficile ipotizzare che tali somme possano utilmente rinvenirsi nel patrimonio dei
+debitori.
+Inoltre, concorrono simultaneamente gli indici sintomatici del fondato timore, del
+ricorrente, di perdere la garanzia del proprio credito.
+Infatti, sul versante oggettivo, emerge dalla documentazione versata in atti la
+scarsa capacità patrimoniale dei convenuti T. ed E. C., i quali non risultano titolari
+di beni immobili a Roma (all. 7 al ricorso), e, pertanto, l'unica possibilità, per la
+curatela ricorrente, di conservare la garanzia patrimoniale è rappresentata dal
+sequestro delle quote societarie e del denaro, di per sé agevolmente occultabile,
+derivante dagli emolumenti maturati e maturandi per le cariche ricoperte (oltre che
+nella C. Costruzioni Immobiliare s.r.l., anche nella Immobiliare Casalotti 2007 s.r.l.
+e nella Principia Investimenti Roma Prima s.r.l., v. all. 8 e 9 al ricorso). La
+consistenza patrimoniale, inadeguata in rapporto all'entità del risarcimento richiesto
+dalla curatela attrice, rende attuale il rischio di insoddisfazione delle pretese
+creditorie ancora sub iudice e fonda la concessione della tutela cautelare invocata.
+È del pari inadeguata la consistenza patrimoniale della convenuta C. Costruzioni
+Immobiliare s.r.l., la quale – come già osservato – ha alienato a terzi gran parte del
+patrimonio immobiliare trasferito in suo favore dalla MA.GI.F. Costruzioni s.r.l.,
+patrimonio che, allo stato, consta solo dei cespiti siti in Roma, Via (omissis), Via
+(omissis) e Via (omissis). Considerato che, a seguito dell'estinzione della
+procedura esecutiva pendente dinanzi al Tribunale di Roma (R.G.E. n. 934/2013),
+intervenuta con provvedimento del 28 maggio 2019, detti beni – oggetto di
+pignoramento da parte della D. P. s.r.l. - sono tornati nella piena disponibilità della
+società resistente, è verosimile ipotizzare che questa, in futuro, possa compiere
+ulteriori atti di alienazione, trasferendo a terzi il residuo patrimonio immobiliare, al
+fine di portare a compimento la complessa operazione di spoliazione in danno dei
+creditori della Costruzioni MA.GI.F. s.r.l., solo iniziata con la scissione de qua
+agitur, e successivamente proseguita con i numerosi atti di compravendita conclusi
+tra il 2015 ed il 2018.
+In altri termini, considerata la condotta pregiudizievole tenuta dalla società
+convenuta, in persona dell'amministratore T. C., in occasione dell'operazione di
+scissione e nel periodo immediatamente successivo, sussiste il rischio concreto
+che la società resistente si disfi, a sua volta, dei beni acquistati dalla società scissa,
+allo scopo di sottrarre ai creditori qualsivoglia possibilità di soddisfacimento dei
+propri diritti.
+Sul versante soggettivo, viene in rilievo la condotta del sig. A.C., il quale in data 6
+marzo 2017 ha alienato a terzi il proprio immobile di Roma, Via (omissis) (all. 3 al
+ricorso) e l'11 ottobre 2018 ha destinato a fondo patrimoniale, in favore della
+moglie, il proprio immobile di Roma, Via (omissis), al fine di sottrarre i propri beni (a
+nulla rilevando che l'atto di segregazione risalisse al 1997, posto che nel 2015 il
+bene era fuoriuscito dal fondo, per poi esservi nuovamente inserito appena pochi
+giorni prima della dichiarazione di fallimento della Costruzioni MA.GI.F. in liq., di cui
+il C. era amministratore).
+Va precisato, infine, che la giurisprudenza (ex plurimis Trib. Venezia, sent. del 21
+ottobre 2015) ha altresì già chiarito che il decorso di un certo lasso di tempo tra il
+momento di verificazione dell'illecito e quello della proposizione della domanda
+cautelare non è, diversamente da quanto dedotto dai resistenti, circostanza di per
+sé sola idonea ad escludere il requisito del periculum in mora, in quanto la relativa
+valutazione deve invece tener conto di una pluralità di indici, oggettivi e soggettivi,
+unitariamente considerati.
+4. Conclusioni.
+In ragione di quanto sin qui esposto, deve essere autorizzato il sequestro
+conservativo richiesto dalla curatela del Fallimento “Costruzioni MA.GI.F. S.r.l. in
+liquidazione” (n. 737/2018) su tutti i beni, mobili e immobili, nonché i crediti dei
+sig.ri A.C., T. C., E. C., nonché della società C. Costruzioni Immobiliare s.r.l., fino a
+concorrenza dell'importo di euro 2.750.000,00, importo comprensivo di sorte
+capitale, rivalutazione e spese legali future, ragionevolmente prevedibili.
+Trattandosi di procedimento cautelare a carattere strumentale e non anticipatorio,
+la regolamentazione delle spese di lite va demandata all'apposita sede di merito.
+p.q.m.
+autorizza il Fallimento “Costruzioni MA.GI.F. s.r.l. in liquidazione”, in persona del
+curatore, ad iscrivere sequestro conservativo su tutti i beni, mobili o immobili,
+nonché i crediti di cui risultino titolari i sig.ri A.C., T. C., E. C., nonché la società C.
+Costruzioni Immobiliare s.r.l., fino a concorrenza della somma di euro
+2.750.000,00;
+rinvia al giudizio di merito il governo delle spese del presente procedimento
+cautelare.
+Manda alla cancelleria per gli adempimenti.
+Roma, 20 aprile 2020
