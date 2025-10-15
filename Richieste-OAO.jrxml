@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report-I_Account" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8d9bd759-9429-4953-b4a2-bd5f447d5e46">
+	<property name="net.sf.jasperreports.export.xls.detect.cell.type" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.remove.empty.space.between.rows" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.auto.fit.column" value="true"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Zira Dev"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="0"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="1000"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#91D04F">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="parameterValue">
+		<box>
+			<pen lineWidth="0.5"/>
+			<topPen lineWidth="0.5"/>
+			<leftPen lineWidth="0.5"/>
+			<bottomPen lineWidth="0.5"/>
+			<rightPen lineWidth="0.5"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Main Query" uuid="3c0e7aa5-a012-4207-aaa6-7ce9ac4ffe17">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Zira Dev"/>
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="0"/>
+		<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="1000"/>
+		<parameter name="TYPE" class="java.util.ArrayList" nestedType="java.lang.String">
+			<defaultValueExpression><![CDATA[null]]></defaultValueExpression>
+		</parameter>
+		<parameter name="PENALTY" class="java.util.ArrayList"/>
+		<parameter name="COMPLAINT_TYPE" class="java.util.ArrayList"/>
+		<parameter name="STATUS" class="java.util.ArrayList"/>
+		<parameter name="SERVICE" class="java.util.ArrayList"/>
+		<parameter name="FAMILY" class="java.util.ArrayList"/>
+		<parameter name="CON_PENALE" class="java.util.ArrayList"/>
+		<parameter name="FLAG_RICHIESTA_TECNICA" class="java.util.ArrayList"/>
+		<parameter name="FLAG_PRESENZA_ACCORDO" class="java.util.ArrayList"/>
+		<parameter name="ID_ACCORDO" class="java.lang.String"/>
+		<parameter name="CURR_YEAR" class="java.lang.Integer"/>
+		<parameter name="SCOPE" class="java.util.ArrayList"/>
+		<parameter name="ACCOUNT" class="java.util.ArrayList"/>
+		<queryString>
+			<![CDATA[with q1 as (
+select year_competence  "year", sum(total_request) richieste, exposure maturate,  sum(approved_amount) riconoscimenti, 
+sum(agreement) accordi,complaint_type,
+sum(total_request) - (sum(approved_amount) + sum(agreement) + sum(credit_notes)) respinto,
+max(exposure) - (sum(approved_amount) + sum(agreement) + sum(credit_notes)) residuo ,
+case when area='Assurance' then true else false end assurance,
+case when complaint_type= 'NOTIFICHE E RIMODULAZIONI' then true else false end RITARDATA,
+case when area='Provisioning' and complaint_type!='NOTIFICHE E RIMODULAZIONI' then true else false end provisioning
+FROM pnt_calculated_agg_requests pcar
+inner join billing.act_account aa on aa.id = pcar.account_id 
+where true and aa.source_account_code NOT IN ('TIM', 'TLC')
+and case when '$P!{ACCOUNT}' = 'null' then true else  pcar.account_id = any (translate('$P!{ACCOUNT}','"[]',' {}') ::text[])  end 
+and $X{IN, pcar.area, TYPE}
+and $X{IN, pcar.penalty_code, PENALTY}
+and $X{IN, pcar.complaint_type, COMPLAINT_TYPE}
+and pcar.status in ('SAP Registration')
+and $X{IN, pcar.service, SERVICE}
+and $X{IN, pcar.macro_service, FAMILY}
+and $X{IN, pcar.penalty_in, CON_PENALE}
+and $X{IN, pcar.technical_request_ind, FLAG_RICHIESTA_TECNICA}
+and $X{IN, pcar.flag_agreement, FLAG_PRESENZA_ACCORDO}
+and case when '$P!{ID_ACCORDO}' = 'null' then true else  $X{EQUAL, pcar.agreement_id, ID_ACCORDO} end
+and $X{IN, pcar.penalty_scope, SCOPE}
+and year_competence between $P{CURR_YEAR} -3 and  $P{CURR_YEAR}
+GROUP BY year, pcar.account_name, PENALTY_SCOPE, PENALTY_NAME, COMPLAINT_TYPE, SERVICE, MACRO_SERVICE, 
+PENALTY_IN, FLAG_AGREEMENT, AGREEMENT_ID, MONTH_COMPETENCE,  area, assurance, RITARDATA, provisioning, exposure),
+
+years as (
+	select  $P{CURR_YEAR}  y0,
+	 $P{CURR_YEAR} - 1 y1,
+	 $P{CURR_YEAR} -2 y2,
+	 $P{CURR_YEAR} -3 y3
+)
+
+select '1.RICHIESTE' ord,
+
+coalesce( sum(case when assurance and year=y0 then richieste else 0 end),0)assurance_y0,
+coalesce( sum(case when provisioning and year=y0 then richieste else 0 end),0)provisioning_y0,
+coalesce( sum(case when (assurance or provisioning) and year=y0 then richieste else 0 end),0)ass_pr_y0,
+coalesce( sum(case when RITARDATA and year=y0 then richieste else 0 end),0)ritardata_y0,
+coalesce( sum(case when year=y0 then richieste else 0 end),0)totali_y0,
+
+coalesce( sum(case when assurance and year=y1 then richieste else 0 end),0)assurance_y1,
+coalesce( sum(case when provisioning and year=y1 then richieste else 0 end),0)provisioning_y1,
+coalesce( sum(case when (assurance or provisioning) and year=y1 then richieste else 0 end),0)ass_pr_y1,
+coalesce( sum(case when RITARDATA and year=y1 then richieste else 0 end),0)ritardata_y1,
+coalesce( sum(case when year=y1 then richieste else 0 end),0)totali_y1,
+
+coalesce( sum(case when assurance and year=y2 then richieste else 0 end),0)assurance_y2,
+coalesce( sum(case when provisioning and year=y2 then richieste else 0 end),0)provisioning_y2,
+coalesce( sum(case when (assurance or provisioning) and year=y2 then richieste else 0 end),0)ass_pr_y2,
+coalesce( sum(case when RITARDATA and year=y2 then richieste else 0 end),0)ritardata_y2,
+coalesce( sum(case when year=y2 then richieste else 0 end),0)totali_y2,
+
+coalesce( sum(case when assurance and year=y3 then richieste else 0 end),0)assurance_y3,
+coalesce( sum(case when provisioning and year=y3 then richieste else 0 end),0)provisioning_y3,
+coalesce( sum(case when (assurance or provisioning) and year=y3 then richieste else 0 end),0)ass_pr_y3,
+coalesce( sum(case when RITARDATA and year=y3 then richieste else 0 end),0)ritardata_y3,
+coalesce( sum(case when year=y3 then richieste else 0 end),0)totali_y3,
+
+coalesce( sum(richieste), 0) totali from q1, years
+
+union select '2.RICONOSCIMENTI' ord,
+
+coalesce( sum(case when assurance and year=y0 then riconoscimenti else 0 end),0)assurance_y0,
+coalesce( sum(case when provisioning and year=y0 then riconoscimenti else 0 end),0)provisioning_y0,
+coalesce( sum(case when (assurance or provisioning) and year=y0 then riconoscimenti else 0 end),0)ass_pr_y0,
+coalesce( sum(case when RITARDATA and year=y0 then riconoscimenti else 0 end),0)ritardata_y0,
+coalesce( sum(case when year=y0 then riconoscimenti else 0 end),0)totali_y0,
+
+coalesce( sum(case when assurance and year=y1 then riconoscimenti else 0 end),0)assurance_y1,
+coalesce( sum(case when provisioning and year=y1 then riconoscimenti else 0 end),0)provisioning_y1,
+coalesce( sum(case when (assurance or provisioning) and year=y1 then riconoscimenti else 0 end),0)ass_pr_y1,
+coalesce( sum(case when RITARDATA and year=y1 then riconoscimenti else 0 end),0)ritardata_y1,
+coalesce( sum(case when year=y1 then riconoscimenti else 0 end),0)totali_y1,
+
+coalesce( sum(case when assurance and year=y2 then riconoscimenti else 0 end),0)assurance_y2,
+coalesce( sum(case when provisioning and year=y2 then riconoscimenti else 0 end),0)provisioning_y2,
+coalesce( sum(case when (assurance or provisioning) and year=y2 then riconoscimenti else 0 end),0)ass_pr_y2,
+coalesce( sum(case when RITARDATA and year=y2 then riconoscimenti else 0 end),0)ritardata_y2,
+coalesce( sum(case when year=y2 then riconoscimenti else 0 end),0)totali_y2,
+
+coalesce( sum(case when assurance and year=y3 then riconoscimenti else 0 end),0)assurance_y3,
+coalesce( sum(case when provisioning and year=y3 then riconoscimenti else 0 end),0)provisioning_y3,
+coalesce( sum(case when (assurance or provisioning) and year=y3 then riconoscimenti else 0 end),0)ass_pr_y3,
+coalesce( sum(case when RITARDATA and year=y3 then riconoscimenti else 0 end),0)ritardata_y3,
+coalesce( sum(case when year=y3 then riconoscimenti else 0 end),0)totali_y3,
+
+coalesce( sum(riconoscimenti) ,0) totali from q1, years
+
+union select '3.ACCORDI' ord,
+
+coalesce( sum(case when assurance and year=y0 then accordi else 0 end),0)assurance_y0,
+coalesce( sum(case when provisioning and year=y0 then accordi else 0 end),0)provisioning_y0,
+coalesce( sum(case when (assurance or provisioning) and year=y0 then accordi else 0 end),0)ass_pr_y0,
+coalesce( sum(case when RITARDATA and year=y0 then accordi else 0 end),0)ritardata_y0,
+coalesce( sum(case when year=y0 then accordi else 0 end),0)totali_y0,
+
+coalesce( sum(case when assurance and year=y1 then accordi else 0 end),0)assurance_y1,
+coalesce( sum(case when provisioning and year=y1 then accordi else 0 end),0)provisioning_y1,
+coalesce( sum(case when (assurance or provisioning) and year=y1 then accordi else 0 end),0)ass_pr_y1,
+coalesce( sum(case when RITARDATA and year=y1 then accordi else 0 end),0)ritardata_y1,
+coalesce( sum(case when year=y1 then accordi else 0 end),0)totali_y1,
+
+coalesce( sum(case when assurance and year=y2 then accordi else 0 end),0)assurance_y2,
+coalesce( sum(case when provisioning and year=y2 then accordi else 0 end),0)provisioning_y2,
+coalesce( sum(case when (assurance or provisioning) and year=y2 then accordi else 0 end),0)ass_pr_y2,
+coalesce( sum(case when RITARDATA and year=y2 then accordi else 0 end),0)ritardata_y2,
+coalesce( sum(case when year=y2 then accordi else 0 end),0)totali_y2,
+
+coalesce( sum(case when assurance and year=y3 then accordi else 0 end),0)assurance_y3,
+coalesce( sum(case when provisioning and year=y3 then accordi else 0 end),0)provisioning_y3,
+coalesce( sum(case when (assurance or provisioning) and year=y3 then accordi else 0 end),0)ass_pr_y3,
+coalesce( sum(case when RITARDATA and year=y3 then accordi else 0 end),0)ritardata_y3,
+coalesce( sum(case when year=y3 then accordi else 0 end),0)totali_y3,
+
+coalesce( sum(accordi) ,0) totali from q1, years
+
+
+union select '4.RESPINTO' ord,
+
+coalesce( sum(case when assurance and year=y0 then respinto else 0 end),0)assurance_y0,
+coalesce( sum(case when provisioning and year=y0 then respinto else 0 end),0)provisioning_y0,
+coalesce( sum(case when (assurance or provisioning) and year=y0 then respinto else 0 end),0)ass_pr_y0,
+coalesce( sum(case when RITARDATA and year=y0 then respinto else 0 end),0)ritardata_y0,
+coalesce( sum(case when year=y0 then respinto else 0 end),0)totali_y0,
+
+coalesce( sum(case when assurance and year=y1 then respinto else 0 end),0)assurance_y1,
+coalesce( sum(case when provisioning and year=y1 then respinto else 0 end),0)provisioning_y1,
+coalesce( sum(case when (assurance or provisioning) and year=y1 then respinto else 0 end),0)ass_pr_y1,
+coalesce( sum(case when RITARDATA and year=y1 then respinto else 0 end),0)ritardata_y1,
+coalesce( sum(case when year=y1 then respinto else 0 end),0)totali_y1,
+
+coalesce( sum(case when assurance and year=y2 then respinto else 0 end),0)assurance_y2,
+coalesce( sum(case when provisioning and year=y2 then respinto else 0 end),0)provisioning_y2,
+coalesce( sum(case when (assurance or provisioning) and year=y2 then respinto else 0 end),0)ass_pr_y2,
+coalesce( sum(case when RITARDATA and year=y2 then respinto else 0 end),0)ritardata_y2,
+coalesce( sum(case when year=y2 then respinto else 0 end),0)totali_y2,
+
+coalesce( sum(case when assurance and year=y3 then respinto else 0 end),0)assurance_y3,
+coalesce( sum(case when provisioning and year=y3 then respinto else 0 end),0)provisioning_y3,
+coalesce( sum(case when (assurance or provisioning) and year=y3 then respinto else 0 end),0)ass_pr_y3,
+coalesce( sum(case when RITARDATA and year=y3 then respinto else 0 end),0)ritardata_y3,
+coalesce( sum(case when year=y3 then respinto else 0 end),0)totali_y3,
+
+coalesce( sum(respinto) ,0) totali from q1, years
+
+union select '5.' ord, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+
+union select '5.PENALI POTENZIALI MATURATE' ord,
+
+coalesce( sum(case when assurance and year=y0 then maturate else 0 end),0)assurance_y0,
+coalesce( sum(case when provisioning and year=y0 then maturate else 0 end),0)provisioning_y0,
+coalesce( sum(case when (assurance or provisioning) and year=y0 then maturate else 0 end),0)ass_pr_y0,
+coalesce( sum(case when RITARDATA and year=y0 then maturate else 0 end),0)ritardata_y0,
+coalesce( sum(case when year=y0 then maturate else 0 end),0)totali_y0,
+
+coalesce( sum(case when assurance and year=y1 then maturate else 0 end),0)assurance_y1,
+coalesce( sum(case when provisioning and year=y1 then maturate else 0 end),0)provisioning_y1,
+coalesce( sum(case when (assurance or provisioning) and year=y1 then maturate else 0 end),0)ass_pr_y1,
+coalesce( sum(case when RITARDATA and year=y1 then maturate else 0 end),0)ritardata_y1,
+coalesce( sum(case when year=y1 then maturate else 0 end),0)totali_y1,
+
+coalesce( sum(case when assurance and year=y2 then maturate else 0 end),0)assurance_y2,
+coalesce( sum(case when provisioning and year=y2 then maturate else 0 end),0)provisioning_y2,
+coalesce( sum(case when (assurance or provisioning) and year=y2 then maturate else 0 end),0)ass_pr_y2,
+coalesce( sum(case when RITARDATA and year=y2 then maturate else 0 end),0)ritardata_y2,
+coalesce( sum(case when year=y2 then maturate else 0 end),0)totali_y2,
+
+coalesce( sum(case when assurance and year=y3 then maturate else 0 end),0)assurance_y3,
+coalesce( sum(case when provisioning and year=y3 then maturate else 0 end),0)provisioning_y3,
+coalesce( sum(case when (assurance or provisioning) and year=y3 then maturate else 0 end),0)ass_pr_y3,
+coalesce( sum(case when RITARDATA and year=y3 then maturate else 0 end),0)ritardata_y3,
+coalesce( sum(case when year=y3 then maturate else 0 end),0)totali_y3,
+
+coalesce( sum(maturate),0) totali from q1, years
+
+
+union select '6.RICONOSCIMENTI' ord,
+
+coalesce( sum(case when assurance and year=y0 then riconoscimenti else 0 end),0)assurance_y0,
+coalesce( sum(case when provisioning and year=y0 then riconoscimenti else 0 end),0)provisioning_y0,
+coalesce( sum(case when (assurance or provisioning) and year=y0 then riconoscimenti else 0 end),0)ass_pr_y0,
+coalesce( sum(case when RITARDATA and year=y0 then riconoscimenti else 0 end),0)ritardata_y0,
+coalesce( sum(case when year=y0 then riconoscimenti else 0 end),0)totali_y0,
+
+coalesce( sum(case when assurance and year=y1 then riconoscimenti else 0 end),0)assurance_y1,
+coalesce( sum(case when provisioning and year=y1 then riconoscimenti else 0 end),0)provisioning_y1,
+coalesce( sum(case when (assurance or provisioning) and year=y1 then riconoscimenti else 0 end),0)ass_pr_y1,
+coalesce( sum(case when RITARDATA and year=y1 then riconoscimenti else 0 end),0)ritardata_y1,
+coalesce( sum(case when year=y1 then riconoscimenti else 0 end),0)totali_y1,
+
+coalesce( sum(case when assurance and year=y2 then riconoscimenti else 0 end),0)assurance_y2,
+coalesce( sum(case when provisioning and year=y2 then riconoscimenti else 0 end),0)provisioning_y2,
+coalesce( sum(case when (assurance or provisioning) and year=y2 then riconoscimenti else 0 end),0)ass_pr_y2,
+coalesce( sum(case when RITARDATA and year=y2 then riconoscimenti else 0 end),0)ritardata_y2,
+coalesce( sum(case when year=y2 then riconoscimenti else 0 end),0)totali_y2,
+
+coalesce( sum(case when assurance and year=y3 then riconoscimenti else 0 end),0)assurance_y3,
+coalesce( sum(case when provisioning and year=y3 then riconoscimenti else 0 end),0)provisioning_y3,
+coalesce( sum(case when (assurance or provisioning) and year=y3 then riconoscimenti else 0 end),0)ass_pr_y3,
+coalesce( sum(case when RITARDATA and year=y3 then riconoscimenti else 0 end),0)ritardata_y3,
+coalesce( sum(case when year=y3 then riconoscimenti else 0 end),0)totali_y3,
+
+coalesce( sum(riconoscimenti),0) totali from q1, years
+
+union select '7.ACCORDI' ord,
+
+coalesce( sum(case when assurance and year=y0 then accordi else 0 end),0)assurance_y0,
+coalesce( sum(case when provisioning and year=y0 then accordi else 0 end),0)provisioning_y0,
+coalesce( sum(case when (assurance or provisioning) and year=y0 then accordi else 0 end),0)ass_pr_y0,
+coalesce( sum(case when RITARDATA and year=y0 then accordi else 0 end),0)ritardata_y0,
+coalesce( sum(case when year=y0 then accordi else 0 end),0)totali_y0,
+
+coalesce( sum(case when assurance and year=y1 then accordi else 0 end),0)assurance_y1,
+coalesce( sum(case when provisioning and year=y1 then accordi else 0 end),0)provisioning_y1,
+coalesce( sum(case when (assurance or provisioning) and year=y1 then accordi else 0 end),0)ass_pr_y1,
+coalesce( sum(case when RITARDATA and year=y1 then accordi else 0 end),0)ritardata_y1,
+coalesce( sum(case when year=y1 then accordi else 0 end),0)totali_y1,
+
+coalesce( sum(case when assurance and year=y2 then accordi else 0 end),0)assurance_y2,
+coalesce( sum(case when provisioning and year=y2 then accordi else 0 end),0)provisioning_y2,
+coalesce( sum(case when (assurance or provisioning) and year=y2 then accordi else 0 end),0)ass_pr_y2,
+coalesce( sum(case when RITARDATA and year=y2 then accordi else 0 end),0)ritardata_y2,
+coalesce( sum(case when year=y2 then accordi else 0 end),0)totali_y2,
+
+coalesce( sum(case when assurance and year=y3 then accordi else 0 end),0)assurance_y3,
+coalesce( sum(case when provisioning and year=y3 then accordi else 0 end),0)provisioning_y3,
+coalesce( sum(case when (assurance or provisioning) and year=y3 then accordi else 0 end),0)ass_pr_y3,
+coalesce( sum(case when RITARDATA and year=y3 then accordi else 0 end),0)ritardata_y3,
+coalesce( sum(case when year=y3 then accordi else 0 end),0)totali_y3,
+
+coalesce( sum(accordi),0) totali from q1, years
+
+
+union select '8.RESIDUO PENALI POTENZIALI' ord,
+
+coalesce( sum(case when assurance and year=y0 then residuo else 0 end),0)assurance_y0,
+coalesce( sum(case when provisioning and year=y0 then residuo else 0 end),0)provisioning_y0,
+coalesce( sum(case when (assurance or provisioning) and year=y0 then residuo else 0 end),0)ass_pr_y0,
+coalesce( sum(case when RITARDATA and year=y0 then residuo else 0 end),0)ritardata_y0,
+coalesce( sum(case when year=y0 then residuo else 0 end),0)totali_y0,
+
+coalesce( sum(case when assurance and year=y1 then residuo else 0 end),0)assurance_y1,
+coalesce( sum(case when provisioning and year=y1 then residuo else 0 end),0)provisioning_y1,
+coalesce( sum(case when (assurance or provisioning) and year=y1 then residuo else 0 end),0)ass_pr_y1,
+coalesce( sum(case when RITARDATA and year=y1 then residuo else 0 end),0)ritardata_y1,
+coalesce( sum(case when year=y1 then residuo else 0 end),0)totali_y1,
+
+coalesce( sum(case when assurance and year=y2 then residuo else 0 end),0)assurance_y2,
+coalesce( sum(case when provisioning and year=y2 then residuo else 0 end),0)provisioning_y2,
+coalesce( sum(case when (assurance or provisioning) and year=y2 then residuo else 0 end),0)ass_pr_y2,
+coalesce( sum(case when RITARDATA and year=y2 then residuo else 0 end),0)ritardata_y2,
+coalesce( sum(case when year=y2 then residuo else 0 end),0)totali_y2,
+
+coalesce( sum(case when assurance and year=y3 then residuo else 0 end),0)assurance_y3,
+coalesce( sum(case when provisioning and year=y3 then residuo else 0 end),0)provisioning_y3,
+coalesce( sum(case when (assurance or provisioning) and year=y3 then residuo else 0 end),0)ass_pr_y3,
+coalesce( sum(case when RITARDATA and year=y3 then residuo else 0 end),0)ritardata_y3,
+coalesce( sum(case when year=y3 then residuo else 0 end),0)totali_y3,
+
+coalesce( sum(residuo),0) totali  from q1, years
+
+order by 1]]>
+		</queryString>
+		<field name="ord" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="ord"/>
+		</field>
+		<field name="assurance_y0" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="assurance_y0"/>
+		</field>
+		<field name="provisioning_y0" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="provisioning_y0"/>
+		</field>
+		<field name="ass_pr_y0" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="ass_pr_y0"/>
+		</field>
+		<field name="ritardata_y0" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="ritardata_y0"/>
+		</field>
+		<field name="totali_y0" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="totali_y0"/>
+		</field>
+		<field name="assurance_y1" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="assurance_y1"/>
+		</field>
+		<field name="provisioning_y1" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="provisioning_y1"/>
+		</field>
+		<field name="ass_pr_y1" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="ass_pr_y1"/>
+		</field>
+		<field name="ritardata_y1" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="ritardata_y1"/>
+		</field>
+		<field name="totali_y1" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="totali_y1"/>
+		</field>
+		<field name="assurance_y2" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="assurance_y2"/>
+		</field>
+		<field name="provisioning_y2" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="provisioning_y2"/>
+		</field>
+		<field name="ass_pr_y2" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="ass_pr_y2"/>
+		</field>
+		<field name="ritardata_y2" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="ritardata_y2"/>
+		</field>
+		<field name="totali_y2" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="totali_y2"/>
+		</field>
+		<field name="assurance_y3" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="assurance_y3"/>
+		</field>
+		<field name="provisioning_y3" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="provisioning_y3"/>
+		</field>
+		<field name="ass_pr_y3" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="ass_pr_y3"/>
+		</field>
+		<field name="ritardata_y3" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="ritardata_y3"/>
+		</field>
+		<field name="totali_y3" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="totali_y3"/>
+		</field>
+		<field name="totali" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="totali"/>
+		</field>
+	</subDataset>
+	<subDataset name="Dataset2" uuid="b2e263e5-d94d-4908-9089-e3fbc5d05b0b">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Zira Dev"/>
+		<parameter name="ACCOUNT" class="java.util.ArrayList"/>
+		<parameter name="PENALTY" class="java.util.ArrayList"/>
+		<parameter name="TYPE" class="java.util.ArrayList"/>
+		<parameter name="FAMILY" class="java.util.ArrayList"/>
+		<parameter name="SERVICE" class="java.util.ArrayList"/>
+		<parameter name="COMPLAINT_TYPE" class="java.util.ArrayList"/>
+		<parameter name="YEAR" class="java.lang.Long"/>
+		<parameter name="MONTH" class="java.util.ArrayList"/>
+		<queryString language="plsql">
+			<![CDATA[SELECT  distinct string_agg(account_name, ', ') as account_name
+FROM billing.act_account
+where case when '$P!{ACCOUNT}' = 'null' then true else id = any(  translate('$P!{ACCOUNT}','[]"','{} ')::text[] ) end
+order by 1]]>
+		</queryString>
+		<field name="account_name" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="account_name"/>
+		</field>
+	</subDataset>
+	<parameter name="TYPE" class="java.util.ArrayList" nestedType="java.lang.String"/>
+	<parameter name="PENALTY" class="java.util.ArrayList" nestedType="java.lang.String"/>
+	<parameter name="COMPLAINT_TYPE" class="java.util.ArrayList" nestedType="java.lang.String"/>
+	<parameter name="SERVICE" class="java.util.ArrayList" nestedType="java.lang.String"/>
+	<parameter name="FAMILY" class="java.util.ArrayList" nestedType="java.lang.String"/>
+	<parameter name="CON_PENALE" class="java.util.ArrayList" nestedType="java.lang.String"/>
+	<parameter name="FLAG_RICHIESTA_TECNICA" class="java.util.ArrayList" nestedType="java.lang.String"/>
+	<parameter name="FLAG_PRESENZA_ACCORDO" class="java.util.ArrayList" nestedType="java.lang.String"/>
+	<parameter name="ID_ACCORDO" class="java.lang.String"/>
+	<parameter name="SCOPE" class="java.util.ArrayList"/>
+	<parameter name="ANNO_COMPETENZA_PENALE" class="java.util.ArrayList"/>
+	<parameter name="ACCOUNT" class="java.util.ArrayList"/>
+	<queryString>
+		<![CDATA[select coalesce(max(yy),extract(year from current_date)::int) as date_part  from 
+generate_series(extract(year from current_date)::int,10,-1) yy
+where yy::text =  any (translate('[$P!{ANNO_COMPETENZA_PENALE}]','"[]',' {}') ::text[])]]>
+	</queryString>
+	<field name="date_part" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="date_part"/>
+	</field>
+	<variable name="cyear" class="java.lang.Integer">
+		<variableExpression><![CDATA[Integer.valueOf(($P{ANNO_COMPETENZA_PENALE}==null)?(new SimpleDateFormat("yyyy")).format(new Date()) : $P{ANNO_COMPETENZA_PENALE}.stream().sorted(java.util.Comparator.reverseOrder()).collect(java.util.stream.Collectors.toList()).toString().substring(1,5))]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="496" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<componentElement>
+				<reportElement stretchType="RelativeToTallestObject" x="130" y="80" width="950" height="200" uuid="6c8fd3ee-13bf-4f0b-b2fe-ac0a5c507a64">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 2_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Main Query" uuid="76fc7853-0ff6-43e1-8abc-376fc3fa55c5">
+						<datasetParameter name="TYPE">
+							<datasetParameterExpression><![CDATA[$P{TYPE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="PENALTY">
+							<datasetParameterExpression><![CDATA[$P{PENALTY}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="COMPLAINT_TYPE">
+							<datasetParameterExpression><![CDATA[$P{COMPLAINT_TYPE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="SERVICE">
+							<datasetParameterExpression><![CDATA[$P{SERVICE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="FAMILY">
+							<datasetParameterExpression><![CDATA[$P{FAMILY}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="CON_PENALE">
+							<datasetParameterExpression><![CDATA[$P{CON_PENALE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="FLAG_RICHIESTA_TECNICA">
+							<datasetParameterExpression><![CDATA[$P{FLAG_RICHIESTA_TECNICA}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="FLAG_PRESENZA_ACCORDO">
+							<datasetParameterExpression><![CDATA[$P{FLAG_PRESENZA_ACCORDO}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="ID_ACCORDO">
+							<datasetParameterExpression><![CDATA[$P{ID_ACCORDO}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="CURR_YEAR">
+							<datasetParameterExpression><![CDATA[$V{cyear}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="SCOPE">
+							<datasetParameterExpression><![CDATA[$P{SCOPE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="ACCOUNT">
+							<datasetParameterExpression><![CDATA[$P{ACCOUNT}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="130" uuid="641aa2aa-7383-4262-a3b2-5aa35842dfe9">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1"/>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="130" height="30" backcolor="#FFBF00" uuid="65f34e30-a9cd-4df0-9d54-14737b9cdc52">
+									<printWhenExpression><![CDATA[!$F{ord}.equals( "5." )]]></printWhenExpression>
+								</reportElement>
+								<textFieldExpression><![CDATA[$F{ord}.substring( 2 )]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="94b1cdbd-64f3-413b-a17b-963a7138c640">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:tableHeader style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TD" height="90" rowSpan="1"/>
+						<jr:detailCell style="Table 2_TD" height="30"/>
+					</jr:column>
+					<jr:column width="81" uuid="ad5054b6-394a-42a4-bd34-51288345b419">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="81" height="90" uuid="5f8995b1-d66a-4361-a036-4211e66ed839"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ASSURANCE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="81" height="30" uuid="017d0b91-6924-499f-a31f-40c2f0255506"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{assurance_y0}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="82" uuid="ceb3cfe9-0277-4113-9079-2c692c2a2b70">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="82" height="90" uuid="861de97c-de86-4732-876a-98b66f092bf0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[PROVISIONG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="82" height="30" uuid="8a269ed3-69ea-4e50-b35f-497635d78696"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{provisioning_y0}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="113" uuid="babb8438-cd8c-4cdb-ba4a-a783a164e496">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="113" height="30" backcolor="#91D04F" uuid="e361f7bd-2f1a-4532-9103-7fd2e66b1ee0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="html"/>
+								<textFieldExpression><![CDATA["<b>Performance " + ($P{CURR_YEAR}.longValue()) + "</b>"]]></textFieldExpression>
+							</textField>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="113" height="90" uuid="369aa65e-a5bf-4b6a-b6a8-40b6d016ced5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ ASSURANCE + PROVISIONG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="113" height="30" uuid="0152671e-c6bc-473f-907e-7b0f605fddd8"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{ass_pr_y0}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="104" uuid="4cfccdbf-825d-45a5-8fe0-894f1808bf6a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="104" height="90" uuid="6d0ec0fa-6aa3-4234-a99e-29d727615849"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ RITARDATA NOTIFICA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="104" height="30" uuid="a6c45918-3e97-46b2-b0c8-434937b2dcca"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{ritardata_y0}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="95" uuid="526e4466-6d43-417e-bd58-a12d3f781ffb">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="95" height="90" uuid="91090d42-32c5-4fb0-a679-90104ed8af6d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[TOTALI
+(ASSURANCE+PROVISIONG+RITARDATA NOTIFICA)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="95" height="30" uuid="31481e15-cb38-41f0-a7ec-0b8f15331b5f"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{totali_y0}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="d950b7d5-9ef5-4bb2-9f84-ee10a6ddd076">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+						<jr:tableHeader style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TD" height="90" rowSpan="1"/>
+						<jr:detailCell style="Table 2_TD" height="30"/>
+					</jr:column>
+					<jr:column width="86" uuid="7cb0d812-3ff8-46ea-a642-964c9917e83c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="86" height="90" uuid="ead36ad3-2fd9-43cf-a936-b9276eb86ee1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ASSURANCE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="86" height="30" uuid="2fd89d23-dab5-4de3-9eee-2a2540eed66d"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{assurance_y1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="77" uuid="3f985aff-234c-4f93-a1a7-8a50e699f560">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="77" height="90" uuid="34334660-46c8-47e5-8379-d4746d235d9a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[PROVISIONG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="77" height="30" uuid="16521526-f483-4e63-8e4f-d6aeebdc754f"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{provisioning_y1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="102" uuid="a8780152-65e7-4343-96de-cfa758597f65">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="102" height="30" backcolor="#91D04F" uuid="f284076f-a283-4e0b-9936-8562850197a8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="html"/>
+								<textFieldExpression><![CDATA["<b>Performance " + ($P{CURR_YEAR}.longValue()-1) + "</b>"]]></textFieldExpression>
+							</textField>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="102" height="90" uuid="97c00bed-9d0d-440c-b239-45384636d1fd"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ ASSURANCE + PROVISIONG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="102" height="30" uuid="c46d82bc-6eb4-4e95-947a-6e739ba687e7"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{ass_pr_y1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="46369ab4-0ed8-4548-91d5-72565e05be73">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="90" uuid="154985f5-6bd5-429e-8728-6f93fa6f92d4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ RITARDATA NOTIFICA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="70" height="30" uuid="b7e54b4f-36a3-4681-9d6c-1f0023bede41"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{ritardata_y1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="05a23345-85a9-4af1-8f2e-2834ae58c30c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column13"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="90" uuid="34323626-1f6a-42d1-b75f-5cbcb7780c0a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[TOTALI
+(ASSURANCE+PROVISIONG+RITARDATA NOTIFICA)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="90" height="30" uuid="498354eb-d609-404e-8cc1-7be0995708c7"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{totali_y1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="108192fb-c942-4d13-ab72-941068458c3e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column14"/>
+						<jr:tableHeader style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TD" height="90" rowSpan="1"/>
+						<jr:detailCell style="Table 2_TD" height="30"/>
+					</jr:column>
+					<jr:column width="101" uuid="32a2ad62-18cd-43ba-97ec-afc683572db7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column15"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="101" height="90" uuid="b3d9050e-f825-4731-916e-96f72ea38ddd"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ASSURANCE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="101" height="30" uuid="21ccc1ea-666a-45d6-a827-e91119decb1f"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{assurance_y2}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="92" uuid="9b94f7f3-7648-4ae7-b6f1-9fb0e6077ca9">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column16"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="92" height="90" uuid="7c33224e-5aa3-4882-a58e-5a38d997f2f7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[PROVISIONG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="92" height="30" uuid="ff0e4f1f-02b8-4217-99d0-df73b9e06e91"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{provisioning_y2}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="97" uuid="29ffba20-b6ee-440c-bd45-9e445e157a25">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column17"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="97" height="30" backcolor="#91D04F" uuid="c44b0989-6247-4073-bfb3-55e477ec2030"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="html"/>
+								<textFieldExpression><![CDATA["<b>Performance " + ($P{CURR_YEAR}.longValue()-2) + "</b>"]]></textFieldExpression>
+							</textField>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="97" height="90" uuid="5081888e-bc0d-4b90-b26d-f7d78c1e21d2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ ASSURANCE + PROVISIONG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="97" height="30" uuid="cebacc8a-6c0c-4052-97fb-d2d99490da53"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{ass_pr_y2}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="84" uuid="6ee0ac9b-c159-4dc4-a2a6-2283f11857c2">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column18"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="84" height="90" uuid="267436ae-05d2-4ac8-bf54-9a042e07fdb2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ RITARDATA NOTIFICA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="84" height="30" uuid="ee696909-b53b-449b-aeba-4cd29b6cf666"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{ritardata_y2}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="75" uuid="9f9ce6e4-54e8-49d8-995f-ac469399fe6b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column19"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="75" height="90" uuid="0ae8f101-cde5-45a2-9051-6cd256dfade0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[TOTALI
+(ASSURANCE+PROVISIONG+RITARDATA NOTIFICA)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="75" height="30" uuid="6428fd77-e473-45ce-ad61-0ae737ff00d1"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{totali_y2}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="8770787e-16a5-4415-8d9f-c4ca53f79b23">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column20"/>
+						<jr:tableHeader style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TD" height="90" rowSpan="1"/>
+						<jr:detailCell style="Table 2_TD" height="30"/>
+					</jr:column>
+					<jr:column width="76" uuid="111109e8-6231-495f-b070-879a66e70180">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column21"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="76" height="90" uuid="42d51e11-2f0c-4e23-8704-d9632e812565"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ASSURANCE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="76" height="30" uuid="57200a7e-4c11-449d-9f25-714f2ae0e74e"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{assurance_y3}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="77" uuid="9ca55ff0-775b-441b-952e-1507cca6b841">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column22"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="77" height="90" uuid="561e8868-bc71-4641-a867-6a5d7640063a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[PROVISIONG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="77" height="30" uuid="a3b809ce-49bd-4318-9448-944bc05ef693"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{provisioning_y3}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="88" uuid="aabe3279-f1c5-48df-b813-f3ffefc5fa0b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column23"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="88" height="30" backcolor="#91D04F" uuid="ebba2d63-e8f6-4388-9ec5-b6af16b0574b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="html"/>
+								<textFieldExpression><![CDATA["<b>Performance " + ($P{CURR_YEAR}.longValue()-3) + "</b>"]]></textFieldExpression>
+							</textField>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="88" height="90" uuid="c05e5045-28a0-4754-bb81-52e35caf8fbe"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ ASSURANCE + PROVISIONG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="88" height="30" uuid="aab5e2d8-d80c-4b36-8635-9a28efa7a86e"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{ass_pr_y3}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="79" uuid="0b57e8de-f072-43cb-9185-a0f1a7c41662">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column24"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="79" height="90" uuid="d906d0b1-904b-461b-af8a-d271ed3b11e7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ RITARDATA NOTIFICA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="79" height="30" uuid="2b0d6e13-934c-4b6e-9e3e-675fa4dbf25b"/>
+								<textFieldExpression><![CDATA[$F{ritardata_y3}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="cd3caade-5ac6-4d34-b671-64da24232170">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column25"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="90" uuid="30e4fe9c-b329-4733-a027-8b02248d2dec"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[TOTALI
+(ASSURANCE+PROVISIONG+RITARDATA NOTIFICA)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="80" height="30" uuid="3b6ee974-e9f5-47b8-8490-160a042ead5e"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{totali_y3}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="ec706147-f627-4257-b9fa-95abd7980d2a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column26"/>
+						<jr:tableHeader style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TD" height="90" rowSpan="1"/>
+						<jr:detailCell style="Table 2_TD" height="30"/>
+					</jr:column>
+					<jr:column width="137" uuid="0e007c3c-3146-4e6a-8607-0dbced68141e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column27"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="137" height="30" uuid="d11ff197-823d-4746-8a5a-0f58cc21fd0c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="html"/>
+								<textFieldExpression><![CDATA["<b>Totali " + ($P{CURR_YEAR}.longValue() - 3) + " - " + ($P{CURR_YEAR}.longValue())]]></textFieldExpression>
+							</textField>
+						</jr:tableHeader>
+						<jr:tableFooter style="Table 2_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="Table_TH" height="90" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="137" height="90" uuid="148cbc2b-a37b-419d-be64-66dda06eb9e3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[TOTALI
+(ASSURANCE+PROVISIONG+RITARDATA NOTIFICA)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField pattern="#,##0.00" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="137" height="30" uuid="78af7e36-a07d-4297-9e5a-c589b0b18be3"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{totali}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="200" width="120" height="120" backcolor="#FFBF00" uuid="fa28624f-6d5f-432f-8db8-df5d879a2042">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Richieste riconosciute]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="320" width="120" height="30" uuid="8e34c298-42ec-452b-84b3-453809f52a1b"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="350" width="120" height="120" backcolor="#FFBF00" uuid="b47dcffb-7d33-4229-a84e-dd9f97ffa8fa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[In maturazione]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="140" y="476" width="610" height="20" isPrintWhenDetailOverflows="true" uuid="6a5ea4da-0c54-458b-8341-5f6aa8e576a0">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
+					<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset2" uuid="6eba71a2-0463-42d4-8a55-7be7ebc6fd9d">
+						<datasetParameter name="ACCOUNT">
+							<datasetParameterExpression><![CDATA[$P{ACCOUNT}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="COMPLAINT_TYPE">
+							<datasetParameterExpression><![CDATA[$P{COMPLAINT_TYPE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="FAMILY">
+							<datasetParameterExpression><![CDATA[$P{FAMILY}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="TYPE">
+							<datasetParameterExpression><![CDATA[$P{TYPE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="SERVICE">
+							<datasetParameterExpression><![CDATA[$P{SERVICE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="PENALTY">
+							<datasetParameterExpression><![CDATA[$P{PENALTY}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="610" uuid="40a737c1-cd9e-423b-a325-dd65fb038135">
+						<jr:detailCell style="Table 1_TD" height="20">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<box>
+								<pen lineWidth="1.5"/>
+							</box>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="610" height="20" backcolor="#91D04F" uuid="4b116b5e-d821-475a-8696-eae7a240ab86"/>
+								<box leftPadding="4" rightPadding="2">
+									<pen lineWidth="1.5"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font size="14"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{ACCOUNT}!= null?$F{account_name}:"Tutti gli Operatori"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="10" y="476" width="130" height="20" backcolor="#FFBF00" uuid="5136c32b-8a5f-4d28-b7d5-e7a24bacbd4d"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement markup="none">
+					<font size="14"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA["OLO"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
