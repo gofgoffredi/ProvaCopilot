@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final utlizzo versione della libreria JasperReports6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FATTURATO_REPORTS" pageWidth="1800" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="1780" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10" uuid="f1a5b0bc-9c12-4dca-bd3d-1c7dbe7baf92">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="billing dev"/>
+	<property name="net.sf.jasperreports.export.xls.ignore.graphics" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.remove.empty.space.between.columns" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.remove.empty.space.between.rows" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.detect.cell.type" value="true"/>
+	<parameter name="billingPeriodIds" class="java.lang.String"/>
+	<parameter name="accountIds" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+    items.sr_rchead_order_no AS "Codice Pratica",
+    (SELECT detail.att_value FROM STT_OBS_STATEMENT_ITEM_DETAIL detail
+        WHERE detail.obs_statement_item_id = items.id AND detail.att_name = 'praticaIRP' ) AS "Codice SF",
+    (SELECT detail.att_value FROM STT_OBS_STATEMENT_ITEM_DETAIL detail
+        WHERE detail.obs_statement_item_id = items.id AND detail.att_name = 'dataCreazionePratica') AS "Data Creazione Pratica",
+    NULL AS "Area Territoriale- classificazione FiberCop (Gioia)",
+    (SELECT detail.att_value FROM STT_OBS_STATEMENT_ITEM_DETAIL detail
+        WHERE detail.obs_statement_item_id = items.id AND detail.att_name = 'regione') AS "Regione",
+    (SELECT detail.att_value FROM STT_OBS_STATEMENT_ITEM_DETAIL detail
+        WHERE detail.obs_statement_item_id = items.id AND detail.att_name = 'provincia') AS "Provincia",
+    (SELECT detail.att_value FROM STT_OBS_STATEMENT_ITEM_DETAIL detail
+        WHERE detail.obs_statement_item_id = items.id AND detail.att_name = 'comuneTratta') AS "Comune",
+    items.sr_rcservice_desc AS "Tipologia Infrastruttura",
+    (SELECT detail.att_value FROM STT_OBS_STATEMENT_ITEM_DETAIL detail
+        WHERE detail.obs_statement_item_id = items.id AND detail.att_name = 'caratterizzazione') AS "Caratterizzazione",
+    items.sr_product_offer_name AS "Descrizione Prodotto",
+    items.sr_product_price_name AS "Oggetto di Fatturazione",
+    (SELECT detail.att_value FROM STT_OBS_STATEMENT_ITEM_DETAIL detail
+        WHERE detail.obs_statement_item_id = items.id AND detail.att_name = 'iru') AS "IRU",
+    items.sr_quantity AS "Quantità",
+    items.multiplier AS "Numerosità",
+    items.sr_product_price_code AS "Unità di Misura",
+    CASE
+        WHEN (statement.billing_method_code = 'Credit Note')
+        THEN NULL
+        ELSE items.sr_unit_price
+    END AS "Prezzo Unitario",
+    (100 - COALESCE(items.sr_discount_percent, 0)) AS "Percentuale",
+    items.sr_charge_amount AS "Corrispettivo",
+    items.product_price_extref_name AS "Listino di Riferimento",
+    statement.erp_invoice_number AS "Riferimento Fattura",
+    statement.erp_invoice_due_date AS "Data emissione fattura",
+    (
+        SELECT
+            CASE
+                WHEN bpg_month IN ('1', '01') THEN 'Gennaio'
+                WHEN bpg_month IN ('2', '02') THEN 'Febbraio'
+                WHEN bpg_month IN ('3', '03') THEN 'Marzo'
+                WHEN bpg_month IN ('4', '04') THEN 'Aprile'
+                WHEN bpg_month IN ('5', '05') THEN 'Maggio'
+                WHEN bpg_month IN ('6', '06') THEN 'Giugno'
+                WHEN bpg_month IN ('7', '07') THEN 'Luglio'
+                WHEN bpg_month IN ('8', '08') THEN 'Agosto'
+                WHEN bpg_month IN ('9', '09') THEN 'Settembre'
+                WHEN bpg_month = '10' THEN 'Ottobre'
+                WHEN bpg_month = '11' THEN 'Novembre'
+                WHEN bpg_month = '12' THEN 'Dicembre'
+                ELSE bpg_month
+            END || ' ' || bpg_year
+        FROM bpt_billing_period
+        WHERE id = statement.billing_period_id
+        LIMIT 1
+    ) AS "Periodo di Fatturazione"
+FROM
+    STT_OBS_STATEMENT_ITEMS items,
+    STT_IBS_OBS_STATEMENT statement
+WHERE
+    statement.id = items.statement_id
+    AND statement.product_group_code = 'INFRASTRUTTURE'
+    AND statement.status = 'Approved'
+    AND statement.billing_period_id IN ($P!{billingPeriodIds})
+    AND statement.account_id = $P{accountIds};]]>
+	</queryString>
+	<field name="Codice Pratica" class="java.lang.String"/>
+	<field name="Codice SF" class="java.lang.String"/>
+	<field name="Data Creazione Pratica" class="java.lang.String"/>
+	<field name="Area Territoriale- classificazione FiberCop (Gioia)" class="java.lang.String"/>
+	<field name="Regione" class="java.lang.String"/>
+	<field name="Provincia" class="java.lang.String"/>
+	<field name="Comune" class="java.lang.String"/>
+	<field name="Tipologia Infrastruttura" class="java.lang.String"/>
+	<field name="Caratterizzazione" class="java.lang.String"/>
+	<field name="Descrizione Prodotto" class="java.lang.String"/>
+	<field name="Oggetto di Fatturazione" class="java.lang.String"/>
+	<field name="IRU" class="java.lang.String"/>
+	<field name="Quantità" class="java.math.BigDecimal"/>
+	<field name="Numerosità" class="java.math.BigDecimal"/>
+	<field name="Unità di Misura" class="java.lang.String"/>
+	<field name="Prezzo Unitario" class="java.math.BigDecimal"/>
+	<field name="Percentuale" class="java.math.BigDecimal"/>
+	<field name="Corrispettivo" class="java.math.BigDecimal"/>
+	<field name="Listino di Riferimento" class="java.lang.String"/>
+	<field name="Riferimento Fattura" class="java.lang.String"/>
+	<field name="Data emissione fattura" class="java.sql.Date"/>
+	<field name="Periodo di Fatturazione" class="java.lang.String"/>
+	<columnHeader>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="1780" height="30" uuid="97eaf8aa-a1f1-4c8d-8266-2023385cf9db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Report fatture]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="1570" height="30" uuid="89a3af5f-71f0-46ea-9f85-ec3491af738e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dati Economici]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1570" y="30" width="210" height="30" uuid="4ce818e4-1920-48d4-a58b-8108ee06f2be"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dati Fatturazione]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="60" width="80" height="30" backcolor="#DAE9F8" uuid="b72e927b-86ab-49bb-bcf1-0e6a7e1126f0"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Codice Pratica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="80" y="60" width="80" height="30" backcolor="#DAE9F8" uuid="bed79c47-73b4-4a4a-9973-be72e471d7ce"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Codice SF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="160" y="60" width="90" height="30" backcolor="#DAE9F8" uuid="ca827b36-1bde-443b-af46-74e1dc6b5fd6"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Data Creazione Pratica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="250" y="60" width="170" height="30" backcolor="#DAE9F8" uuid="3b8d2c72-e14b-4add-a4a3-a25e9af8a65f"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Area Territoriale- classificazione FiberCop (Gioia)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="60" width="80" height="30" backcolor="#DAE9F8" uuid="1dc43212-1ec3-4442-b590-1e3fa0c12fea"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Regione]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="60" width="80" height="30" backcolor="#DAE9F8" uuid="9380a805-55a6-4e24-960f-ff12a3df188f"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Provincia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="580" y="60" width="80" height="30" backcolor="#DAE9F8" uuid="5b9fe653-ba0d-49d0-8c3d-2aa6655f3f63"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Comune]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="660" y="60" width="100" height="30" backcolor="#DAE9F8" uuid="e5ecbfe5-08f6-4cff-871f-082bf676c4ea"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tipologia Infrastruttura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="760" y="60" width="90" height="30" backcolor="#DAE9F8" uuid="fdd4e161-feb3-463d-811c-6547c8ba2a8a"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Caratterizzazione]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="850" y="60" width="90" height="30" backcolor="#DAE9F8" uuid="997faa6f-91e4-4123-b42f-2d17cd38258d"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Descrizione Prodotto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="940" y="60" width="80" height="30" backcolor="#DAE9F8" uuid="5175b30a-a81d-459f-ba6d-499fb6ae292d"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Oggetto di Fatturazione]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1020" y="60" width="60" height="30" backcolor="#DAE9F8" uuid="26d3b86e-1067-4812-9615-45073f1431ed"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[IRU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1080" y="60" width="60" height="30" backcolor="#DAE9F8" uuid="e919b804-6272-468e-805c-c93f3b776145"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Quantità]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1140" y="60" width="60" height="30" backcolor="#DAE9F8" uuid="42c0ca02-6474-431a-812e-5a3451713e37"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Numerosità]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1200" y="60" width="70" height="30" backcolor="#DAE9F8" uuid="8dbf2b98-3290-43ca-b16e-a86da835c671"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Unità di Misura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1270" y="60" width="70" height="30" backcolor="#DAE9F8" uuid="d12ea7a8-7205-461d-8c23-892cd5e60be2"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Prezzo Unitario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1340" y="60" width="60" height="30" backcolor="#DAE9F8" uuid="d156d9f0-641b-4523-ba85-b0a3f3314a22"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Percentuale]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1400" y="60" width="80" height="30" backcolor="#DAE9F8" uuid="5c1e52a8-9c29-4cec-99e7-3a7a09275d7f"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Corrispettivo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1480" y="60" width="90" height="30" backcolor="#DAE9F8" uuid="1bffc104-9b12-4a86-966f-309a238f4a89"/>
+				<box>
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Listino di Riferimento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1570" y="60" width="70" height="30" backcolor="#FFC000" uuid="42c098e4-3113-4e42-9388-fe444d691644"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Riferimento Fattura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1640" y="60" width="75" height="30" backcolor="#FFC000" uuid="8527c720-5967-4b45-9da9-f77060a70aae"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Data emissione fattura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1715" y="60" width="65" height="30" backcolor="#FFC000" uuid="bf575f40-bba0-4eb8-b582-2175762da035"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Periodo di Fatturazione]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="80" height="20" uuid="91818c23-30c6-408e-9df3-526ba7129bcc"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{Codice Pratica}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="80" y="0" width="80" height="20" uuid="778a8953-9e63-4925-a9ee-247b999fc45c"/>
+				<textFieldExpression><![CDATA[$F{Codice SF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="160" y="0" width="90" height="20" uuid="d1671830-dd72-4f83-af73-4f9bd991bcc0"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{Data Creazione Pratica}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="250" y="0" width="170" height="20" uuid="1a0ded34-1af5-4fe0-8a36-ee78e8c3561f"/>
+				<textFieldExpression><![CDATA[$F{Area Territoriale- classificazione FiberCop (Gioia)}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="420" y="0" width="80" height="20" uuid="c26b21ac-17ef-41d2-82e8-e0e8b90700f9"/>
+				<textFieldExpression><![CDATA[$F{Regione}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="500" y="0" width="80" height="20" uuid="32ba6092-500b-4e48-9e86-151de055d0d2"/>
+				<textFieldExpression><![CDATA[$F{Provincia}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="580" y="0" width="80" height="20" uuid="2b488953-3272-4b5c-8435-d2d25fea72fc"/>
+				<textFieldExpression><![CDATA[$F{Comune}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="660" y="0" width="100" height="20" uuid="f438c228-5559-48e4-b93b-ecfc65f63009"/>
+				<textFieldExpression><![CDATA[$F{Tipologia Infrastruttura}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="760" y="0" width="90" height="20" uuid="f67554c3-2423-4c3e-abed-354de85399cc"/>
+				<textFieldExpression><![CDATA[$F{Caratterizzazione}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="850" y="0" width="90" height="20" uuid="60dfc904-cea5-4c98-b864-72cddc688515"/>
+				<textFieldExpression><![CDATA[$F{Descrizione Prodotto}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="940" y="0" width="80" height="20" uuid="5a0f900a-971e-46c6-bede-3eb443e0441d"/>
+				<textFieldExpression><![CDATA[$F{Oggetto di Fatturazione}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1020" y="0" width="60" height="20" uuid="604daabe-2f41-441f-ba8f-6b34703f7028"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{IRU}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="1080" y="0" width="60" height="20" uuid="6bcc0f59-ffde-4c3c-867e-edbe4ec2578b"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{Quantità}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="1140" y="0" width="60" height="20" uuid="f1564c7c-1517-4475-899e-c149a7336919"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{Numerosità}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1200" y="0" width="70" height="20" uuid="68d03ea3-9687-4a78-ab4c-68b3b4f31bdc"/>
+				<textFieldExpression><![CDATA[$F{Unità di Misura}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="1270" y="0" width="70" height="20" uuid="d6766ed3-e067-4fa6-8791-a887c3197973"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{Prezzo Unitario}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="1340" y="0" width="60" height="20" uuid="473b4111-0491-4422-a646-481094f131fe"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{Percentuale}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="1400" y="0" width="80" height="20" uuid="5216c292-93bd-4585-99e9-f0630fb0de78"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{Corrispettivo}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1480" y="0" width="90" height="20" uuid="687d4562-89e4-42ae-bc82-7ed12f502a72"/>
+				<textFieldExpression><![CDATA[$F{Listino di Riferimento}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1570" y="0" width="70" height="20" uuid="2e552764-cd16-4058-ad10-4795416a2b95"/>
+				<textFieldExpression><![CDATA[$F{Riferimento Fattura}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1640" y="0" width="75" height="20" uuid="b09ed214-7f0b-4724-819e-0f64fea2d6a9"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{Data emissione fattura}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="1715" y="0" width="65" height="20" uuid="5de382d1-af2d-4f69-bfdf-b168de35166f"/>
+				<textFieldExpression><![CDATA[$F{Periodo di Fatturazione}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
