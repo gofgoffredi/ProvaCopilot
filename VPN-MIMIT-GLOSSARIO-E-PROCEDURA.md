@@ -33,10 +33,10 @@ Il **client VPN** è il programma che avvia la connessione verso la VPN.
 
 ### Funzione
 Il client:
-- contatta il server VPN;
+- contatta il gateway VPN;
 - invia le credenziali;
-- crea il collegamento protetto;
-- mantiene attivo il tunnel.
+- avvia la connessione che porterà alla creazione del tunnel;
+- mantiene attivo il collegamento mentre la VPN è in uso.
 
 ### Nel vostro caso
 Il client è il comando:
@@ -52,12 +52,15 @@ Questo è il programma usato per aprire la VPN dal server Linux.
 ## 1.3 Gateway VPN
 Il **gateway VPN** è il punto di ingresso della VPN.
 
-### Funzione
+### Che cos’è un gateway, in generale
+Un gateway è un punto di passaggio tra due reti diverse. In una VPN, il gateway è il “cancello” di ingresso verso la rete privata remota.
+
+### Funzione del gateway VPN
 È il server che:
 - riceve la connessione del client;
 - verifica username, password e OTP/token;
 - autorizza o rifiuta l’accesso;
-- termina la connessione VPN e consente l’accesso alla rete interna.
+- termina la connessione VPN sul lato remoto e consente l’accesso alla rete interna autorizzata.
 
 ### Nel vostro caso
 Il gateway è:
@@ -75,7 +78,7 @@ Il gateway **non è** il database finale o il server applicativo interno.
 ---
 
 ## 1.4 Tunnel VPN
-Il **tunnel** è il collegamento protetto creato tra il client VPN e il gateway VPN.
+Il **tunnel** è il collegamento protetto stabilito tra il client VPN e il gateway VPN.
 
 ### Funzione
 Il tunnel:
@@ -95,7 +98,19 @@ tun0
 
 ---
 
-## 1.5 Interfaccia `tun0`
+## 1.5 Interfaccia di rete
+Un’interfaccia di rete è il punto attraverso cui il sistema operativo invia e riceve traffico di rete.
+
+### Due casi comuni
+- **Interfaccia fisica**: una scheda di rete reale, collegata a un cavo o a una scheda wireless.
+- **Interfaccia virtuale**: una porta software gestita dal sistema operativo o da un programma, non legata a un cavo fisico.
+
+### Nel vostro caso
+`tun0` è un’interfaccia di rete virtuale usata dalla VPN.
+
+---
+
+## 1.6 Interfaccia `tun0`
 `tun0` è una tipica interfaccia di rete virtuale usata dalle VPN.
 
 ### A cosa serve
@@ -104,9 +119,14 @@ Quando la VPN è attiva, il traffico destinato alla rete interna passa su questa
 ### Perché è importante
 Se il DNS o le rotte non sono impostate bene su `tun0`, il server potrebbe non raggiungere i nomi interni MIMIT.
 
+### Idea semplice
+`tun0` è il punto di uscita/ingresso locale del traffico VPN sul server Linux.
+
+Non è il gateway, non è il server remoto e non è il database: è una porta software locale usata per instradare il traffico del tunnel.
+
 ---
 
-## 1.6 DNS
+## 1.7 DNS
 Il DNS è il sistema che traduce i nomi host in indirizzi IP.
 
 ### Esempio
@@ -123,7 +143,61 @@ Serve un DNS interno del MIMIT, perché i nomi privati non si risolvono con i DN
 
 ---
 
-## 1.7 tmux
+## 1.8 `resolvectl`
+`resolvectl` è un comando di Linux che permette di vedere e configurare lo stato della risoluzione DNS gestita dal sistema.
+
+### A cosa serve in questo contesto
+Serve per controllare quali DNS sono in uso e, se necessario, associare un DNS specifico a una certa interfaccia, ad esempio `tun0`.
+
+---
+
+## 1.9 `resolvectl status`
+Il comando:
+
+```bash
+resolvectl status
+```
+
+mostra lo stato attuale della configurazione DNS del sistema.
+
+### Cosa mostra
+Può mostrare, tra le altre cose:
+- quali interfacce di rete sono presenti;
+- quali server DNS sono associati a ciascuna interfaccia;
+- quale DNS è attualmente utilizzato;
+- eventuali domini di ricerca configurati.
+
+### Cosa non fa
+- non modifica la configurazione;
+- non apre la VPN;
+- non esegue una query DNS verso un host specifico.
+
+### Perché è utile
+Serve a capire **come è configurato il DNS in quel momento**, soprattutto dopo l’attivazione della VPN.
+
+---
+
+## 1.10 `resolvectl dns`
+Il comando:
+
+```bash
+sudo resolvectl dns tun0 10.184.3.133
+```
+
+imposta il server DNS `10.184.3.133` per l’interfaccia `tun0`.
+
+### Cosa significa in pratica
+Dice al sistema:
+
+> “Quando il traffico passa da `tun0`, usa questo server DNS per risolvere i nomi.”
+
+### Cosa fa e cosa non fa
+- **Fa**: configura il DNS associato a quella interfaccia.
+- **Non fa**: non verifica da solo che il nome host sia risolvibile.
+
+---
+
+## 1.11 `tmux`
 `tmux` è un terminal multiplexer.
 
 ### Funzione
@@ -137,7 +211,7 @@ Serve a mantenere viva la sessione in cui gira la VPN.
 
 ---
 
-## 1.8 PuTTY
+## 1.12 PuTTY
 PuTTY è un client SSH.
 
 ### Funzione
@@ -148,7 +222,7 @@ Con PuTTY si entra nel server di sviluppo/integrazione come utente `tomcat`.
 
 ---
 
-## 1.9 OTP / Authenticator / token
+## 1.13 OTP / Authenticator / token
 L’OTP è un codice temporaneo generato da un’app di autenticazione, come Google Authenticator.
 
 ### Funzione
@@ -162,7 +236,7 @@ Dopo aver avviato `startct`, il client può chiedere:
 
 ---
 
-## 1.10 Tomcat
+## 1.14 Tomcat
 Tomcat è un application server Java.
 
 ### Funzione
@@ -416,14 +490,17 @@ Il flusso completo è questo:
 ## Tunnel VPN
 È il collegamento sicuro che si crea dopo l’autenticazione.
 
+## Interfaccia di rete
+È il punto software o hardware attraverso cui il sistema invia e riceve traffico di rete.
+
+## `tun0`
+È l’interfaccia di rete virtuale usata dalla VPN sul server Linux.
+
 ## DNS
 Serve per risolvere i nomi interni della rete MIMIT.
 
 ## Tomcat
 Esegue le applicazioni che devono usare la rete interna.
-
-## `tun0`
-È l’interfaccia su cui transita il traffico della VPN.
 
 ---
 
@@ -433,12 +510,13 @@ Esegue le applicazioni che devono usare la rete interna.
 - `startct` è il client VPN.
 - `consulenti.mise.gov.it` è il gateway VPN.
 - `tmux` mantiene viva la sessione.
-- `tun0` è l’interfaccia del tunnel.
-- `resolvectl dns` configura il DNS interno.
+- `tun0` è l’interfaccia di rete virtuale della VPN.
+- `resolvectl status` mostra la configurazione DNS.
+- `sudo resolvectl dns tun0 10.184.3.133` associa un DNS a `tun0`.
 - `nslookup` e `nc` verificano che tutto funzioni.
 - `Tomcat reload` riavvia le app che devono usare la rete interna.
 
 ---
 
 # 6. Conclusione
-La procedura serve a collegare il server Linux alla rete interna MIMIT attraverso una VPN, mantenere viva la connessione, configurare il DNS corretto per i nomi interni e rendere disponibili le applicazioni Tomcat verso le risorse private.
+La procedura serve a collegare il server Linux alla rete interna MIMIT attraverso una VPN, mantenere viva la connessione, configurare correttamente il DNS per i nomi interni e rendere disponibili le applicazioni Tomcat verso le risorse private.
