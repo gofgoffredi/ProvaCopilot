@@ -5,9 +5,10 @@ Questo documento spiega in modo chiaro:
 
 1. i termini tecnici usati nella procedura VPN;
 2. il significato dei comandi;
-3. il flusso operativo completo per collegarsi alla rete MIMIT dal server Linux di sviluppo/integrazione.
+3. il flusso operativo completo per collegarsi alla rete MIMIT dal server Linux di sviluppo/integrazione;
+4. le verifiche fatte per capire cosa succede la sera/notte alla VPN.
 
-L’obiettivo è capire **cosa fa ogni comando** e **perché viene eseguito**.
+L’obiettivo è capire **cosa fa ogni comando**, **perché viene eseguito** e **come interpretare i risultati**.
 
 ---
 
@@ -33,10 +34,10 @@ Il **client VPN** è il programma che avvia la connessione verso la VPN.
 
 ### Funzione
 Il client:
-- contatta il gateway VPN;
+- contatta il server VPN;
 - invia le credenziali;
-- avvia la connessione che porterà alla creazione del tunnel;
-- mantiene attivo il collegamento mentre la VPN è in uso.
+- crea il collegamento protetto;
+- mantiene attivo il tunnel.
 
 ### Nel vostro caso
 Il client è il comando:
@@ -462,45 +463,230 @@ Verificare che la porta MySQL `3306` sia raggiungibile.
 
 ---
 
-# 3. Flusso logico completo della procedura
+# 3. Verifiche fatte la sera/notte per capire cosa succede alla VPN
 
-Il flusso completo è questo:
-
-1. Si accede al server Linux tramite PuTTY.
-2. Si controlla se ci sono vecchi processi VPN.
-3. Se necessario, si termina il processo precedente.
-4. Si apre una sessione `tmux`.
-5. Si avvia il client VPN `startct`.
-6. Si inseriscono le credenziali richieste.
-7. Si ottiene il tunnel VPN.
-8. Si configura il DNS sul tunnel `tun0`.
-9. Si verificano la risoluzione DNS e la connettività verso gli host interni MIMIT.
-10. Si ricaricano le applicazioni Tomcat.
+Questa sezione riassume i controlli eseguiti sul server per capire perché la VPN viene rifatta ogni mattina.
 
 ---
 
-# 4. Relazione tra i vari elementi
+## 3.1 Controllo dei processi della VPN
 
-## Client VPN
-È il programma usato sul server Linux per aprire la connessione.
+```bash
+ps -auxf | grep [s]tartct
+ps -auxf | grep [M]IMIT-VPN
+ps -p 2738134,2738145,2738191 -o pid,ppid,pgid,sid,tpgid,tty,stat,lstart,etime,comm
+pstree -p 2738145
+```
 
-## Gateway VPN
-È il server MIMIT a cui il client si collega inizialmente.
+### Che cosa mostrano
+- `ps -auxf`: elenca i processi con una vista ad albero;
+- `grep [s]tartct`: cerca il comando `startct` senza includere la riga di `grep`;
+- `grep [M]IMIT-VPN`: cerca la sessione o il terminale tmux associato;
+- `ps -p ... -o ...`: mostra i dettagli di PID, padre, gruppo, sessione, stato e comando;
+- `pstree -p ...`: mostra la relazione padre/figlio tra i processi.
 
-## Tunnel VPN
-È il collegamento sicuro che si crea dopo l’autenticazione.
+### Cosa abbiamo osservato
+Il processo `startct` risultava sospeso (`T`), mentre il processo Java figlio risultava anch’esso sospeso (`Tl`).
 
-## Interfaccia di rete
-È il punto software o hardware attraverso cui il sistema invia e riceve traffico di rete.
+### Significato
+La shell o lo script di avvio non erano il vero componente che gestiva la VPN in quel momento.
 
-## `tun0`
-È l’interfaccia di rete virtuale usata dalla VPN sul server Linux.
+---
 
-## DNS
-Serve per risolvere i nomi interni della rete MIMIT.
+## 3.2 Identificazione del processo che usa davvero il tunnel
 
-## Tomcat
-Esegue le applicazioni che devono usare la rete interna.
+```bash
+sudo lsof -nP /dev/net/tun
+ps -p 2738228 -o pid,ppid,pgid,sid,stat,lstart,etime,cmd
+```
+
+### Che cosa fanno
+- `lsof -nP /dev/net/tun`: mostra quale processo ha aperto il dispositivo TUN;
+- `ps -p 2738228 ...`: mostra i dettagli del processo trovato.
+
+### Cosa abbiamo scoperto
+Il processo che usava realmente il tunnel era:
+
+```text
+/usr/local/Aventail/AvConnect --app-dir=/home/tomcat/.sonicwall -p44655
+```
+
+### Significato
+`AvConnect` è il processo effettivo che mantiene la VPN attiva.
+
+---
+
+## 3.3 Verifica dell’interfaccia VPN e delle rotte
+
+```bash
+ip addr show tun0
+ip link show tun0
+ip route
+ip route get 10.184.42.135
+```
+
+### Che cosa fanno
+- `ip addr show tun0`: mostra l’indirizzo e lo stato dell’interfaccia `tun0`;
+- `ip link show tun0`: mostra le proprietà del link;
+- `ip route`: mostra le rotte presenti;
+- `ip route get 10.184.42.135`: mostra quale interfaccia verrebbe usata per raggiungere quell’IP.
+
+### Cosa abbiamo osservato
+- `tun0` era presente e `UP`;
+- l’indirizzo assegnato era `10.145.16.11`;
+- il traffico verso `10.184.42.135` veniva instradato su `tun0`.
+
+### Significato
+La VPN risultava attiva e il traffico verso il database interno passava effettivamente nel tunnel.
+
+---
+
+## 3.4 Controllo della configurazione DNS
+
+```bash
+resolvectl status
+```
+
+### Cosa abbiamo osservato
+La risoluzione DNS mostrava l’interfaccia `tun0` con il DNS `10.184.3.133`.
+
+### Significato
+Il sistema stava usando il DNS interno del MIMIT per la rete raggiunta tramite VPN.
+
+---
+
+## 3.5 Verifica di risoluzione del nome e porta del database
+
+```bash
+nslookup mysqlclustertest.risorse.mise
+nc -vz mysqlclustertest.risorse.mise 3306
+```
+
+### Cosa abbiamo osservato
+- il nome `mysqlclustertest.risorse.mise` veniva risolto in `10.184.42.135`;
+- la connessione TCP alla porta `3306` riusciva.
+
+### Significato
+La risoluzione DNS e la raggiungibilità del database risultavano corrette in quel momento.
+
+---
+
+## 3.6 Verifica dei log della VPN
+
+I log più utili erano:
+
+- `/home/tomcat/.sonicwall/AventailConnect/library/logs/SnwlConnect.log`
+- `/home/tomcat/.sonicwall/AventailConnect/library/logs/AventailConnect.log`
+
+### Comandi usati
+
+```bash
+tail -n 100 /home/tomcat/.sonicwall/AventailConnect/library/logs/SnwlConnect.log
+tail -n 100 /home/tomcat/.sonicwall/AventailConnect/library/logs/AventailConnect.log
+```
+
+```bash
+grep -nE 'AventailConnect\(|Starting TunThrd|Tunnel Connection Stale|Connection timed out|Resumption Timedout|Ending TunThrd|Closing Log' \
+  /home/tomcat/.sonicwall/AventailConnect/library/logs/AventailConnect.log \
+  /home/tomcat/.sonicwall/AventailConnect/library/logs/AventailConnect.log.old \
+  | tail -n 180
+```
+
+### Significato dei comandi
+- `tail -n 100`: mostra le ultime 100 righe del log;
+- `grep -nE`: cerca più pattern e mostra i numeri di riga;
+- `tail -n 180`: mantiene solo le ultime righe utili del risultato.
+
+### Cosa abbiamo visto nei log
+Nei log comparivano eventi ripetitivi di questo tipo:
+
+- `Starting TunThrd`
+- `Tunnel Connection Stale triggering Resume`
+- `Connection timed out`
+- `Resumption Timedout[35]s`
+- `Ending TunThrd`
+- `Closing Log`
+
+### Esempio di log osservato
+
+```text
+2026-10-15 08:06:27.722 INFO main - ConnectApplication - ================ init() START ================================
+2026-10-15 08:06:28.031 INFO main - ConnectApplication - App Mode: [CONSOLE]
+2026-10-15 08:06:28.540 INFO Aventail Connect - AvCHandler - Starting Aventail Connect
+2026-10-15 08:07:28.154 INFO pool-1-thread-3 - AvVpnServiceManager - REPC not enabled
+2026-10-15 08:07:29.139 INFO pool-1-thread-3 - LogonAgent - GetAPIVersion() ...
+2026-10-16 00:00:19.668 [0x7fe558c12640] I - evpnproto.cpp:SendKA - Tunnel Connection Stale triggering Resume
+2026-10-16 00:00:56.776 [0x7fe55973e740] I - AventailConnect.cpp:HandleTunnel - Resumption Timedout[35]s
+2026-10-16 00:00:57.813 [0x7fe558c12640] I - vpntunnel.cpp:EndTunSession - Ending TunThrd[0x7fe558c12640]
+2026-10-16 00:00:58.912 [0x7fe55973e740] I - Closing Log
+```
+
+### Interpretazione
+- la VPN viene avviata e stabilita;
+- nelle ore notturne il tunnel viene considerato obsoleto o non più recuperabile;
+- dopo circa 35 secondi di tentativo di recupero il client chiude la sessione.
+
+### Osservazione importante
+Le sessioni non cadevano sempre alla stessa distanza temporale dall’avvio: a volte dopo poche ore, a volte più tardi. La ricorrenza forte era invece l’orario notturno, vicino a mezzanotte o poco dopo.
+
+---
+
+## 3.7 Verifica di attività pianificate sul server
+
+```bash
+journalctl --since "2026-10-15 23:55" --until "2026-10-16 00:05" --no-pager
+systemctl list-timers --all
+crontab -l
+cat /etc/crontab
+ls -l /etc/cron.d /etc/cron.daily
+```
+
+### Che cosa abbiamo cercato
+- eventi di sistema attorno a mezzanotte;
+- timer systemd programmati;
+- crontab dell’utente `tomcat`;
+- crontab di sistema;
+- script in `/etc/cron.d` e `/etc/cron.daily`.
+
+### Cosa abbiamo trovato
+- `crontab -l` per `tomcat` non mostrava lavori personali;
+- `systemctl list-timers --all` mostrava timer di sistema, ma nessuno chiaramente associato alla VPN;
+- nel `journalctl` comparivano attività come `logrotate` e backup `dpkg`, ma queste risultavano successive al primo segnale di problema della VPN.
+
+### Esempio di output rilevante del journal
+
+```text
+Oct 16 00:00:30 mimit-tomcat-svil systemd[1]: Starting Daily dpkg database backup service...
+Oct 16 00:00:30 mimit-tomcat-svil systemd[1]: Starting Rotate log files...
+Oct 16 00:00:32 mimit-tomcat-svil systemd[1]: Finished Rotate log files.
+Oct 16 00:00:57 mimit-tomcat-svil systemd-networkd[2109264]: tun0: Link DOWN
+Oct 16 00:00:57 mimit-tomcat-svil systemd-networkd[2109264]: tun0: Lost carrier
+```
+
+### Interpretazione
+Il problema del tunnel appare prima della chiusura di `tun0`. Questo suggerisce che la perdita dell’interfaccia è una conseguenza della chiusura della VPN, non la causa iniziale.
+
+### Nota
+Questi controlli servono a capire se esiste un’attività locale programmata che possa spiegare la caduta. Nei dati raccolti finora non è emersa una prova di un cron o timer locale che spieghi da solo il comportamento.
+
+---
+
+# 4. Cosa abbiamo imparato dalle verifiche
+
+## 4.1 La VPN è reale e funzionante quando è attiva
+Il tunnel è attivo, `tun0` è configurata, il DNS interno è presente e il database è raggiungibile.
+
+## 4.2 Il processo che conta davvero è `AvConnect`
+`startct` è il launcher iniziale, ma il processo che gestisce realmente il tunnel è `AvConnect`.
+
+## 4.3 La caduta avviene tipicamente la sera/notte
+Dai log, il tunnel tende a chiudersi in fascia notturna, spesso vicino a mezzanotte o poco dopo.
+
+## 4.4 La chiusura del tunnel è seguita da `Resumption Timedout` e `Closing Log`
+Questo indica che il client tenta un recupero per un tempo limitato, poi termina la sessione.
+
+## 4.5 Non abbiamo trovato, nei controlli fatti, una causa locale evidente
+Non è emersa una crontab dell’utente `tomcat` né un timer chiaramente associato alla VPN.
 
 ---
 
@@ -510,13 +696,48 @@ Esegue le applicazioni che devono usare la rete interna.
 - `startct` è il client VPN.
 - `consulenti.mise.gov.it` è il gateway VPN.
 - `tmux` mantiene viva la sessione.
-- `tun0` è l’interfaccia di rete virtuale della VPN.
-- `resolvectl status` mostra la configurazione DNS.
-- `sudo resolvectl dns tun0 10.184.3.133` associa un DNS a `tun0`.
+- `tun0` è l’interfaccia del tunnel.
+- `resolvectl dns` configura il DNS interno.
 - `nslookup` e `nc` verificano che tutto funzioni.
-- `Tomcat reload` riavvia le app che devono usare la rete interna.
+- `AvConnect` è il processo che gestisce realmente la VPN.
+- I log mostrano che la VPN tende a cadere la sera/notte e poi viene rifatta il mattino successivo.
 
 ---
 
 # 6. Conclusione
-La procedura serve a collegare il server Linux alla rete interna MIMIT attraverso una VPN, mantenere viva la connessione, configurare correttamente il DNS per i nomi interni e rendere disponibili le applicazioni Tomcat verso le risorse private.
+La procedura serve a collegare il server Linux alla rete interna MIMIT attraverso una VPN, mantenere viva la connessione, configurare il DNS corretto per i nomi interni e rendere disponibili le applicazioni Tomcat verso le risorse private.
+
+Le verifiche fatte sul server hanno mostrato che la VPN funziona quando è attiva, ma tende a chiudersi nelle ore serali/notturne. I log indicano che, dopo il fallimento del tentativo di recupero, il client chiude la sessione e il mattino successivo è necessario riavviare la connessione.
+
+---
+
+# 7. Appendice: comandi usati per la diagnosi serale/notturna
+
+Per comodità, qui sono raccolti i comandi usati per capire cosa succede alla VPN:
+
+```bash
+ps -auxf | grep [s]tartct
+ps -auxf | grep [M]IMIT-VPN
+ps -p 2738134,2738145,2738191 -o pid,ppid,pgid,sid,tpgid,tty,stat,lstart,etime,comm
+pstree -p 2738145
+sudo lsof -nP /dev/net/tun
+ps -p 2738228 -o pid,ppid,pgid,sid,stat,lstart,etime,cmd
+ip addr show tun0
+ip link show tun0
+ip route
+ip route get 10.184.42.135
+resolvectl status
+nslookup mysqlclustertest.risorse.mise
+nc -vz mysqlclustertest.risorse.mise 3306
+journalctl --since "2026-10-15 23:55" --until "2026-10-16 00:05" --no-pager
+systemctl list-timers --all
+crontab -l
+cat /etc/crontab
+ls -l /etc/cron.d /etc/cron.daily
+tail -n 100 /home/tomcat/.sonicwall/AventailConnect/library/logs/SnwlConnect.log
+tail -n 100 /home/tomcat/.sonicwall/AventailConnect/library/logs/AventailConnect.log
+grep -nE 'AventailConnect\(|Starting TunThrd|Tunnel Connection Stale|Connection timed out|Resumption Timedout|Ending TunThrd|Closing Log' \
+  /home/tomcat/.sonicwall/AventailConnect/library/logs/AventailConnect.log \
+  /home/tomcat/.sonicwall/AventailConnect/library/logs/AventailConnect.log.old \
+  | tail -n 180
+```
