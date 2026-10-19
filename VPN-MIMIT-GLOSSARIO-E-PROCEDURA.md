@@ -57,7 +57,7 @@ Il **gateway VPN** è il punto di ingresso della VPN.
 - riceve la connessione del client;
 - verifica username, password e OTP/token;
 - autorizza o rifiuta l’accesso;
-- apre il tunnel verso la rete interna.
+- termina la connessione VPN e consente l’accesso alla rete interna.
 
 ### Nel vostro caso
 Il gateway è:
@@ -70,7 +70,7 @@ Quando il client si collega a questo indirizzo, sta contattando il punto di acce
 
 ### Importante
 Il gateway **non è** il database finale o il server applicativo interno.  
-È solo il punto di ingresso alla rete remota.
+È il punto di ingresso alla rete remota.
 
 ---
 
@@ -80,7 +80,7 @@ Il **tunnel** è il collegamento protetto creato tra il client VPN e il gateway 
 ### Funzione
 Il tunnel:
 - cifra il traffico;
-- trasporta i pacchetti tra il server Linux e la rete MIMIT;
+- trasporta i pacchetti tra il server Linux e il gateway VPN;
 - permette di raggiungere le risorse interne autorizzate.
 
 ### Immagine mentale
